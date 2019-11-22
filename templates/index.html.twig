@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel='stylesheet' href='css/style.css'>
-    <title>portfolio</title>
-</head>
-<body class="preload">
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+{% block content %}
 <div class="supercontainer">
     <div class="mainTitle">Projets</div>
     <div class="grid_container_left">
@@ -81,10 +80,8 @@
         </div>
     </div>
 </div>
-<script
-        src="https://code.jquery.com/jquery-3.4.0.js"
-        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/preloadAnimation.js"></script>
-</body>
-</html>
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('projects') }}
+{% endblock %}
