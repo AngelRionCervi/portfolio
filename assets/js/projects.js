@@ -7,6 +7,8 @@ $(document).ready(()=>{
 
     $('.project_text_left').on("click", (event) => {
         let id = event.target.id;
+        let projectIndex = Number(id.split('').pop()) - 1;
+        appendContent(projectIndex);
 
         $('.slide_box_stay').each((index, el) => {
             let idclose = $(el).parent().attr('id').split('_').shift();
@@ -21,7 +23,7 @@ $(document).ready(()=>{
             }
         });
 
-        $(event.target).parent().addClass('slide_box_selected')
+        $(event.target).parent().addClass('slide_box_selected');
 
         $('#'+id+'_output > div').removeClass('slide_box_stay_back').addClass('slide_box_stay');
 
@@ -41,8 +43,20 @@ $(document).ready(()=>{
         }, 1000)
 
     });
+});
 
-})
+function appendContent(index) {
+    let contentDisplay = document.querySelector('.cell-wrapper');
+    let title = contentDisplay.querySelector('h2');
+    let image1 = contentDisplay.querySelector('.image-project');
+    let description = contentDisplay.querySelector('.text-project > p');
+
+    let contentWrapper = document.querySelector('.project_' + (index + 1));
+
+    title.innerText = contentWrapper.querySelector('.title').innerText;
+    image1.src = "images/" + contentWrapper.querySelector('.image1').innerText;
+    description.innerText = contentWrapper.querySelector('.description').innerText;
+}
 
 
 

@@ -196,4 +196,8 @@
     transition-duration: 0.4s;
 }
 
+.projects-content {
+    display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -14,6 +14,13 @@ class HomeController extends AbstractController
      */
     public function indexAction()
     {
-        return $this->render('index.html.twig');
+
+        $projectsJson = file_get_contents("../assets/json/projects.json");
+        $projects = json_decode($projectsJson, true);
+
+
+        return $this->render('index.html.twig', [
+            "projects" => $projects
+        ]);
     }
 }

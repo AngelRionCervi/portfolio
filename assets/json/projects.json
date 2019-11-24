@@ -1,0 +1,28 @@
+{
+
+    "emojifier": {
+      "id": "1",
+      "title": "Image emojifier",
+      "image1": "emojifier/samus1.jpg",
+      "description": "Transforme une image en mosaique d'émojis de taille choisie en fonction des couleurs moyennes aux coordonnées correspondantes"
+    },
+    "perlinNoise": {
+      "id": "2",
+      "title": "Random 2D map generation",
+      "image1": "emojifier/samus1.jpg",
+      "description": "Transforme une image en mosaique d'émojis de taille choisie en fonction des couleurs moyennes aux coordonnées correspondantes"
+    },
+    "renoving": {
+      "id": "3",
+      "title": "Renoving Habitat",
+      "image1": "emojifier/samus1.jpg",
+      "description": "Transforme une image en mosaique d'émojis de taille choisie en fonction des couleurs moyennes aux coordonnées correspondantes"
+    },
+    "cryptoCharts": {
+      "id": "4",
+      "title": "Crypto Board",
+      "image1": "emojifier/samus1.jpg",
+      "description": "Transforme une image en mosaique d'émojis de taille choisie en fonction des couleurs moyennes aux coordonnées correspondantes"
+    }
+
+}

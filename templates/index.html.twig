@@ -7,31 +7,13 @@
 <div class="supercontainer">
     <div class="mainTitle">Projets</div>
     <div class="grid_container_left">
-        <div class="grid_item proj">
-            <div class="slide_box">
-                <p class="project_text_left" id="p1">Lorem ipsum dolor sit amet</p>
+        {% for project in projects %}
+            <div class="grid_item proj">
+                <div class="slide_box">
+                    <p class="project_text_left" id="{{ "p" ~ loop.index }}">{{ project.title }}</p>
+                </div>
             </div>
-        </div>
-        <div class="grid_item proj">
-            <div class="slide_box">
-                <p class="project_text_left" id="p2">Lorem ipsum dolor sit amet</p>
-            </div>
-        </div>
-        <div class="grid_item proj">
-            <div class="slide_box">
-                <p class="project_text_left" id="p3">Lorem ipsum dolor sit amet</p>
-            </div>
-        </div>
-        <div class="grid_item proj">
-            <div class="slide_box">
-                <p class="project_text_left" id="p4">Lorem ipsum dolor sit amet</p>
-            </div>
-        </div>
-        <div class="grid_item proj">
-            <div class="slide_box">
-                <p class="project_text_left" id="p5">Lorem ipsum dolor sit amet</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <div class="cell-center">
         <div class="cell-wrapper">
@@ -53,31 +35,22 @@
         </div>
     </div>
     <div class="grid_container_right">
-        <div class="grid_item" id="p1_output">
-            <div>
-                <p class="project_text_right">&nbsp;</p>
+        {% for project in projects %}
+            <div class="grid_item" id="{{ "p" ~ loop.index ~ "_output" }}">
+                <div>
+                    <p class="project_text_right">&nbsp;</p>
+                </div>
             </div>
-        </div>
-        <div class="grid_item" id="p2_output">
-            <div>
-                <p class="project_text_right">&nbsp;</p>
+        {% endfor %}
+    </div>
+    <div class="projects-content">
+        {% for project in projects %}
+            <div class="project_{{ loop.index }}">
+                <div class="title">{{ project.title }}</div>
+                <div class="image1">{{ project.image1 }}</div>
+                <div class="description">{{ project.description }}</div>
             </div>
-        </div>
-        <div class="grid_item" id="p3_output">
-            <div>
-                <p class="project_text_right">&nbsp;</p>
-            </div>
-        </div>
-        <div class="grid_item" id="p4_output">
-            <div>
-                <p class="project_text_right">&nbsp;</p>
-            </div>
-        </div>
-        <div class="grid_item" id="p5_output">
-            <div>
-                <p class="project_text_right">&nbsp;</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
