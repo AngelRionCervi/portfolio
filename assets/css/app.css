@@ -21,11 +21,30 @@
 
 .mainTitle {
     padding: 0;
-    margin-left: 45px;
-    margin-top: 40px;
+    position: fixed;
+    left: 45px;
+    top: 40px;
+}
+
+.mainTitle > h1 {
     font-family: "nimbusBold";
     font-size: 30px;
     color: #1C3648;
+    margin: 0;
+}
+
+.cv-dl {
+    padding: 0;
+    position: fixed;
+    right: 45px;
+    bottom: 40px;
+}
+
+.cv-dl > a {
+    font-family: "nimbusBold";
+    font-size: 30px;
+    color: #1C3648;
+    text-decoration: none;
 }
 
 .supercontainer {
@@ -56,7 +75,6 @@
 .grid_container_right {
     position: absolute;
     right: 0;
-    margin-top: 45px;
     margin-bottom: auto;
     width: 20vw;
     height: 80%;
@@ -154,12 +172,22 @@
 
 .text-project-grid {
     height: 30vh;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 0.8fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.spec-project {
+    background-color: #1C3648;
+    height: 100%;
 }
 
 .image-container {
-
+    position: relative;
 }
 
 .image-project {
@@ -198,6 +226,64 @@
 
 .projects-content {
     display: none;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 20px solid #1C3648;
+}
+
+/* SPECS */
+
+.spec-project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.spec {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.image-spec {
+    width: 45%;
+    margin: 0 auto;
+}
+
+
+
+/* ERRORS */
+
+.error_title-container > h1 {
+    text-align: center;
+    font-family: "nimbusBold";
+    color: #1C3648;
+    font-size: 404%;
+}
+
+.error_text-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.error_text-container > p {
+    color: #1C3648;
+    text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+{% block content %}
+    <div class="supercontainer">
+        <div class="error_title-container">
+            <h1>404</h1>
+        </div>
+        <div class="error_text-container">
+            <p>
+               You're lost ! The projects are <a href="{{ path('index') }}">here</a>.
+            </p>
+        </div>
+    </div>
+{% endblock %}

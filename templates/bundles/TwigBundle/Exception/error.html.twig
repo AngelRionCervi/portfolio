@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+{% block content %}
+    <div class="supercontainer">
+        <div class="error_title-container">
+            <h1>some error</h1>
+        </div>
+        <div class="error_text-container">
+            <p>
+                Weird error... ! Projects are still <a href="{{ path('index') }}">here</a> though.
+            </p>
+        </div>
+    </div>
+{% endblock %}
+
