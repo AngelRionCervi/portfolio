@@ -35,11 +35,13 @@
     left: -27vw;
     width: 50vw;
     position: absolute;
-    border-right: calc(1.5vw + 1vh) solid #1C3648;
-    background-color: rgba(255, 255, 255, 1);
+    border-right: calc(1.5vw + 1vh - 1px) solid #1C3648; /* -1px cause of the 1px outline on the skew border */
+    background-color: #f1f0ea;
     height: 100vh;
     transform: skew(-3deg) rotate(3deg);
     z-index: 1;
+    outline: 1px solid #1C3648;
+    backface-visibility: hidden;
 }
 
 
@@ -49,7 +51,7 @@
     grid-template-rows: repeat(3, 30%);
     grid-column-gap: 0;
     grid-row-gap: 0;
-    margin-top: calc(3vw + 2vh);
+    margin-top: calc(1.5vw + 1vh);
 }
 
 .name p {
@@ -111,7 +113,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 90vh;
-    width: 15vw;
+    width: 5vw;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
