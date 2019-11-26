@@ -4,77 +4,129 @@
     {{ encore_entry_link_tags('app') }}
 {% endblock %}
 {% block content %}
-<div class="supercontainer">
-    <div class="mainTitle"><h1>Projets</h1></div>
-    <div class="grid_container_left">
-        {% for project in projects %}
-            <div class="grid_item proj">
-                <div class="slide_box">
-                    <p class="project_text_left" id="{{ "p" ~ loop.index }}">{{ project.title }}</p>
+    <div class="full-border-top"></div>
+    <div class="supercontainer">
+        <div id="project_section">
+            <div class="mainTitle"><h1>Projets</h1></div>
+            <div class="grid_container_left">
+                {% for project in projects %}
+                    <div class="grid_item proj">
+                        <div class="slide_box">
+                            <p class="project_text_left" id="{{ "p" ~ loop.index }}">{{ project.title }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="cell-center">
+                <div class="cell-wrapper">
+                    <div class="image-project-grid">
+                        <div class="title-project-container">
+                            <h2>
+                                Perlin noise terrain generation
+                            </h2>
+                        </div>
+                        <div class="image-container">
+                            <img class="image-project" src="https://via.placeholder.com/1920x1080">
+                            <div class="top-right">
+                                <div class="arrow-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-project-grid">
+                        <div class="text-project">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                                amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                        <div class="spec-project">
+                            <div class="spec spec1"><img class="image-spec" src=""></div>
+                            <div class="spec spec2"><img class="image-spec" src=""></div>
+                            <div class="spec spec3"><img class="image-spec" src=""></div>
+                            <div class="spec spec4"><img class="image-spec" src=""></div>
+                            <div class="spec spec5"><img class="image-spec" src=""></div>
+                            <div class="spec spec6"><img class="image-spec" src=""></div>
+                            <div class="spec spec7"><img class="image-spec" src=""></div>
+                            <div class="spec spec8"><img class="image-spec" src=""></div>
+                            <div class="spec spec9"><img class="image-spec" src=""></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        {% endfor %}
-    </div>
-    <div class="cell-center">
-        <div class="cell-wrapper">
-            <div class="image-project-grid">
-                <div class="title-project-container">
-                    <h2>
-                        Perlin noise terrain generation
-                    </h2>
+            <div class="grid_container_right">
+                {% for project in projects %}
+                    <div class="grid_item" id="{{ "p" ~ loop.index ~ "_output" }}">
+                        <div>
+                            <p class="project_text_right">&nbsp;</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="projects-content">
+                {% for project in projects %}
+                    <div class="project_{{ loop.index }}">
+                        <div class="title">{{ project.title }}</div>
+                        <div class="description">{{ project.description }}</div>
+                        <div class="image-content-container">
+                            {% for image in project.images %}
+                                <div class="image-link">{{ image }}</div>
+                            {% endfor %}
+                        </div>
+                        <div class="spec-content-container">
+                            {% for spec in project.specs %}
+                                <div class="spec-svg">{{ spec }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="cv-dl"><a href="files/cv.pdf">CV</a></div>
+        </div>
+        <div id="me_section" class="me-section">
+            <div class="row-left">
+                <div class="name">
+                    <p>Angel</p>
+                    <p>Rion -</p>
+                    <p>Cervi</p>
                 </div>
-                <div class="image-container">
-                    <img class="image-project" src="https://via.placeholder.com/1920x1080">
-                    <div class="top-right"><div class="arrow-right"></div></div>
+                <div class="profession">
+                    <p>Développeur web</p>
+                    <p>PHP / JS</p>
+                </div>
+                <div class="icons-contact">
+                    <div class="github-icon">
+                        <img class="github-icon" src="images/specs/github.svg" alt="github icon">
+                    </div>
+                    <div class="gitlab-icon">
+                        <img class="github-icon" src="images/specs/gitlab.svg" alt="gitlab icon">
+                    </div>
+                    <div class="linkedin-icon">
+                        <img class="linkedin-icon" src="images/specs/linkedin.svg" alt="linkedin icon">
+                    </div>
                 </div>
             </div>
-            <div class="text-project-grid">
-                <div class="text-project">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                </div>
-                <div class="spec-project">
-                    <div class="spec spec1"><img class="image-spec" src=""></div>
-                    <div class="spec spec2"><img class="image-spec" src=""></div>
-                    <div class="spec spec3"><img class="image-spec" src=""></div>
-                    <div class="spec spec4"><img class="image-spec" src=""></div>
-                    <div class="spec spec5"><img class="image-spec" src=""></div>
-                    <div class="spec spec6"><img class="image-spec" src=""></div>
-                    <div class="spec spec7"><img class="image-spec" src=""></div>
-                    <div class="spec spec8"><img class="image-spec" src=""></div>
-                    <div class="spec spec9"><img class="image-spec" src=""></div>
+            <div class="row-middle">
+                <div class="border-skew"></div>
+                <div class="career-lines">
+                    <div class="line">
+                        <div class="bar bar1"></div>
+                    </div>
+                    <div class="line">
+                        <div class="bar bar2"></div>
+                    </div>
+                    <div class="line">
+                        <div class="bar bar3"></div>
+                    </div>
+                    <div class="line">
+                        <div class="bar bar4"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="grid_container_right">
-        {% for project in projects %}
-            <div class="grid_item" id="{{ "p" ~ loop.index ~ "_output" }}">
-                <div>
-                    <p class="project_text_right">&nbsp;</p>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-    <div class="projects-content">
-        {% for project in projects %}
-            <div class="project_{{ loop.index }}">
-                <div class="title">{{ project.title }}</div>
-                <div class="description">{{ project.description }}</div>
-                <div class="image-content-container">
-                    {% for image in project.images %}
-                        <div class="image-link">{{ image }}</div>
-                    {% endfor %}
-                </div>
-                <div class="spec-content-container">
-                    {% for spec in project.specs %}
-                        <div class="spec-svg">{{ spec }}</div>
-                    {% endfor %}
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-    <div class="cv-dl"><a href="files/cv.pdf">CV</a></div>
-</div>
 {% endblock %}
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
