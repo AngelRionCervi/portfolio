@@ -12,8 +12,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
 }
 
 .row-left {
@@ -43,7 +43,6 @@
     outline: 1px solid #1C3648;
     backface-visibility: hidden;
 }
-
 
 .name {
     display: grid;
@@ -90,9 +89,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-bottom: calc(3vw + 2vh);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-bottom: calc(1.5vw + 1vh);
     margin-left: 2vw;
     width: 70%;
 }
@@ -110,8 +109,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
     height: 90vh;
     width: 5vw;
     position: absolute;
@@ -127,10 +126,45 @@
 
 .bar {
     height: calc(1.5vw + 1vh);
-    background-color: #1C3648;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #1C3648 50%);
     position: absolute;
-    width: 100vh;
+    width: 50vw;
+    transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
+    background-position: -10vw 100%;
+    background-size: 200% 100%;
 }
+
+.bar:hover {
+    background-position: 0% -100%;
+    cursor: pointer;
+}
+
+.bar p {
+    /* background-image: url(../img/elvis.jpg); */
+    /* text-align: center; */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    /*background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #1C3648 0%);*/
+    background-image: linear-gradient(90deg, rgba(28,54,72,1) 50%, rgba(241,240,234,1) 50%);/*rgba(28,54,72,1) rgba(241,240,234,1)*/
+    /* font: 700 15vw 'Open Sans', sans-serif; */
+    position: absolute;
+    margin: 0;
+    font-size: calc(1.2vw + 0.8vh);
+    margin-top: -0.2%;
+    /* color: #1C3648; */
+    color: transparent;
+    background-position: -10vw -100%;
+    background-size: 50vw 100%;
+    transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
+    width: 100%;
+    text-align: end;
+}
+
+.bar:hover > p {
+    background-position: 0% -100%;
+}
+
 /*
 .bar1 {
     width: 8vw;
