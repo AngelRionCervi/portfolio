@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+{{ encore_entry_link_tags('skills') }}
+{% endblock %}
+{% block content %}
+<div class="full-border-top"></div>
+<div class="supercontainer">
+    <div id="skills_section" class="skills-section">
+        <div class="row-left-menu">
+            <div class="menu2">
+                <div class="line">
+                    <div class="bar bar1"><p>Home&nbsp</p></div>
+                </div>
+                <div class="line">
+                    <div class="bar bar1"><p>About Me&nbsp</p></div>
+                </div>
+                <div class="line">
+                    <div class="bar bar2"><p>Projects&nbsp</p></div>
+                </div>
+                <div class="line">
+                    <div class="bar bar3"><p>Skills&nbsp</p></div>
+                </div>
+                <div class="line">
+                    <div class="bar bar4"><p>Contact&nbsp</p></div>
+                </div>
+            </div>
+            <div class="icons-contact">
+                <div class="github-icon">
+                    <img class="github-icon" src="images/specs/github.svg" alt="github icon">
+                </div>
+                <div class="gitlab-icon">
+                    <img class="github-icon" src="images/specs/gitlab.svg" alt="gitlab icon">
+                </div>
+                <div class="linkedin-icon">
+                    <img class="linkedin-icon" src="images/specs/linkedin.svg" alt="linkedin icon">
+                </div>
+            </div>
+        </div>
+        <div class="row-middle">
+            <div class="border-skew"></div>
+            <div class="skills-lines">
+                <div class="skill-line">
+                    <p>HTML5&nbsp</p>
+                    <div class="skill-bar skill-bar-html"></div>
+                </div>
+                <div class="skill-line">
+                    <p>Javascript&nbsp</p>
+                    <div class="skill-bar skill-bar-js"></div>
+                </div>
+                <div class="skill-line">
+                    <p>VueJS&nbsp</p>
+                    <div class="skill-bar skill-bar-vue"></div>
+                </div>
+                <div class="skill-line">
+                    <p>ReactJS&nbsp</p>
+                    <div class="skill-bar skill-bar-react"></div>
+                </div>
+                <div class="skill-line">
+                    <p>Css + Sass&nbsp</p>
+                    <div class="skill-bar skill-bar-css"></div>
+                </div>
+                <div class="skill-line">
+                    <p>PHP&nbsp</p>
+                    <div class="skill-bar skill-bar-php"></div>
+                </div>
+                <div class="skill-line">
+                    <p>Symfony&nbsp</p>
+                    <div class="skill-bar skill-bar-symfony"></div>
+                </div>
+                <div class="skill-line">
+                    <p>SQL&nbsp</p>
+                    <div class="skill-bar skill-bar-sql"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row-right">
+            
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+{% block javascripts %}
+{{ encore_entry_script_tags('app') }}
+{% endblock %}

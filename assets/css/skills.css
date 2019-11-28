@@ -1,0 +1,111 @@
+.skills-section {
+    display: grid;
+    grid-template-columns: 1fr 0fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.row-left-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    width: 18vw;
+    border-left: calc(1.5vw + 1vh) solid #1C3648;
+    border-bottom: calc(1.5vw + 1vh) solid #1C3648;
+    border-top: calc(1.5vw + 1vh) solid transparent;
+    height: calc(100vh - calc(1.5vw + 1vh) - calc(1.5vw + 1vh));
+    z-index: 2;
+}
+
+.menu2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-top: calc(1.5vw + 1vh);
+}
+
+.menu2 p {
+    display: flex;
+    align-items: center;
+    font-size: 4.3vw;
+    color: #1C3648;
+    margin-left: 2vw;
+    font-family: "nimbusBold";
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 60%;
+}
+
+.skills-lines {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    height: 90vh;
+    width: 0.5vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 1.2%;
+}
+
+.skill-line {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-left: -100vw;
+}
+
+.skill-line > p {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+
+.skill-bar {
+    height: calc(0.75vw + 0.5vh);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #1C3648 50%);
+    width: 100vw;
+    transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
+    background-size: 1000% 100%;
+}
+
+.skill-bar-html {
+    right: 0vw;
+}
+
+.skill-bar-js {
+    right: -2vw;
+}
+
+.skill-bar-vue {
+    right: 3vw;
+}
+
+.skill-bar-react {
+    right: 5vw;
+}
+
+.skill-bar-css {
+    right: 0vw;
+}
+
+.skill-bar-php {
+    right: -1vw;
+}
+
+.skill-bar-symfony {
+    right: -1vw;
+}
+
+.skill-bar-sql {
+    right: 1vw;
+}

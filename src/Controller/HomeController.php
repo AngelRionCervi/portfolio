@@ -32,4 +32,13 @@ class HomeController extends AbstractController
 
         return $this->render('aboutMe.html.twig');
     }
+
+    /**
+     * @Route("/skills", name="skills")
+     */
+    public function skillsAction()
+    {
+
+        return $this->render('skills.html.twig');
+    }
 }
