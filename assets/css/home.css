@@ -68,10 +68,10 @@
 .profession {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 30%);
+    grid-template-rows: repeat(2, 6vh);
     grid-column-gap: 0;
     grid-row-gap: 0;
-    margin-top: 5%;
+    margin-top: 12vh;
 }
 
 .profession p {
@@ -83,7 +83,6 @@
     font-family: "nimbusReg";
     margin-bottom: 0;
     margin-top: 0;
-    height: 60%;
 }
 
 .icons-contact {

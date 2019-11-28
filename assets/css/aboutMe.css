@@ -20,8 +20,9 @@
 }
 
 .h1-container > h1 {
+	width: 90%;
 	font-size: 4.5vw;
-	text-align: start;
+	text-align: end;
 	font-family: "nimbusReg";
 	color: #1C3648;
 	margin-top: calc(1.5vw + 1vh);
@@ -45,10 +46,11 @@
 }
 
 .quote-container > p {
-	font-size: 1.2vw;
+	font-size: calc(1vw + 0.6vh);
 	font-style: italic;
 	font-family: "nimbusBold";
 	color: #1C3648;
+	margin-left: calc(1.5vw + 1vh);
 }
 
 .hexagon-part {
@@ -114,5 +116,5 @@
 
 .text-container > p {
 	line-height: 1.4;
-	font-size: calc(1vw + 0.6vh);
+	font-size: calc(0.8vw + 0.6vh);
 }
