@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+{{ encore_entry_link_tags('aboutMeCss') }}
+{% endblock %}
+{% block content %}
+<div class="full-border-top"></div>
+<div class="supercontainer">
+    <div id="me_section" class="me-section">
+        <div class="row-left">
+            <div class="name">
+                <p>Angel</p>
+                <p>Rion -</p>
+                <p>Cervi</p>
+            </div>
+            <div class="profession">
+                <p>Développeur web</p>
+                <p>PHP / JS</p>
+            </div>
+            <div class="icons-contact">
+                <div class="github-icon">
+                    <img class="github-icon" src="images/specs/github.svg" alt="github icon">
+                </div>
+                <div class="gitlab-icon">
+                    <img class="github-icon" src="images/specs/gitlab.svg" alt="gitlab icon">
+                </div>
+                <div class="linkedin-icon">
+                    <img class="linkedin-icon" src="images/specs/linkedin.svg" alt="linkedin icon">
+                </div>
+            </div>
+        </div>
+        <div class="row-middle">
+            <div class="border-skew"></div>
+            <div class="career-lines">
+                <div class="line">
+                    <div class="bar bar1 bar-active"></div>
+                </div>
+                <div class="line">
+                    <div class="bar bar2"><p>Projects&nbsp</p></div>
+                </div>
+                <div class="line">
+                    <div class="bar bar3"><p>Skills&nbsp</p></div>
+                </div>
+                <div class="line">
+                    <div class="bar bar4"><p>Contact&nbsp</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="row-right">
+            <div class="about-me-container">
+                <div class="h1-container">
+                    <h1>About Me</h1>
+                </div>
+                <div class="quote-container">
+                    <p class="quote">"Who is this guy?"</p>
+                </div>
+                <div class="weird-geom-container">
+                    <div class="double-circle-container">
+                        <div class="lil-dot"></div>
+                        <div class="big-dot"> <div class="small-line"></div></div>
+
+                    </div>
+                    <div class="photo-container">
+                     <div class="hexagon-part">
+                        <div class="hexagon-shape"></div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hi, My name is Angel Rion-Cervi, I'm a web-developper currently based in Orléans, France. I work mainly with JavaScript and PHP and a few frameworks. I like video-games, music and design. Feel free to contact me !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+{% block javascripts %}
+{{ encore_entry_script_tags('app') }}
+{% endblock %}

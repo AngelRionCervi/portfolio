@@ -1,0 +1,118 @@
+.bar-active {
+	background-position: 0% 100%;
+	cursor: default !important;
+}
+
+.bar-active > p {
+	
+}
+
+
+.about-me-container {
+	width: 55%;
+    float: right;
+    margin-right: calc(1.5vw + 1vh + 10vw);
+    margin-top: calc(1.5vw + 1vh);
+}
+
+.h1-container {
+
+}
+
+.h1-container > h1 {
+	font-size: 4.5vw;
+	text-align: start;
+	font-family: "nimbusReg";
+	color: #1C3648;
+	margin-top: calc(1.5vw + 1vh);
+	margin-bottom: 4%;
+}
+
+.weird-geom-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.quote-container {
+	display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quote-container > p {
+	font-size: 1.2vw;
+	font-style: italic;
+	font-family: "nimbusBold";
+	color: #1C3648;
+}
+
+.hexagon-part {
+	float: left;
+}
+
+.hexagon-shape {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+        /* add slash at the end of line to see the rhombus *
+        outline: solid 1px red;/**/
+    width: 15vw;
+    height: 15vw;
+    transform: skewX(30deg) scaleY(.866);
+}
+.hexagon-shape:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-color: #dedfdb;
+    content: '';
+}    
+
+.lil-dot {
+	height: 2.5vw;
+  	width: 2.5vw;
+  	background-color: #1C3648;
+  	border-radius: 50%;
+  	display: inline-block;
+  	margin-left: 12vw;
+  	margin-top: 3vw;
+}
+
+.big-dot {
+	height: 6vw;
+  	width: 6vw;
+  	background-color: #1C3648;
+  	border-radius: 50%;
+  	display: inline-block;
+  	margin-top: 2vw;
+  	position: relative;
+}
+
+.small-line {
+	width: 7vw;
+    height: 0.2vw;
+    position: absolute;
+    left: -2.5vw;
+    top: 3vw;
+    transform: rotate(90deg);
+    background-color: #f1f0ea;
+}
+
+.text-container {
+	width: 80%;
+	margin-top: 8%;
+	color: #1C3648;
+}
+
+.text-container > p {
+	line-height: 1.4;
+	font-size: calc(1vw + 0.6vh);
+}

@@ -1,3 +1,4 @@
+
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -12,5 +13,10 @@ require('../css/project.css');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 const $ = require('jquery');
+
+ $(window).on('load', function() {
+    $("body").removeClass("preload");
+});
+
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');

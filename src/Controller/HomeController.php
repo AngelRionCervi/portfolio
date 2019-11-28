@@ -23,4 +23,13 @@ class HomeController extends AbstractController
             "projects" => $projects
         ]);
     }
+
+    /**
+     * @Route("/about-me", name="about-me")
+     */
+    public function aboutMeAction()
+    {
+
+        return $this->render('aboutMe.html.twig');
+    }
 }

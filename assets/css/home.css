@@ -10,7 +10,7 @@
 
 .me-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 0fr 2fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
@@ -179,6 +179,20 @@
 .bar4 {
     width: 12.6vw;
 }
+
+    now that was fun !
+    
+    position: absolute; 
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 80%, #1C3648 20%);
+    background-size: 29%;
+    content: '';
+    background-position: 388% 100%;
+    /* border: 1px solid red;
 
  */
 
