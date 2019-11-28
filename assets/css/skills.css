@@ -30,15 +30,17 @@
 }
 
 .menu2 p {
+    font-size: calc(1.5vw + 1vh);
+    color: #1C3648;
+    font-family: "nimbusBold";
+    height: 100%;
+}
+
+.line-menu2 {
     display: flex;
     align-items: center;
-    font-size: 4.3vw;
-    color: #1C3648;
-    margin-left: 2vw;
-    font-family: "nimbusBold";
-    margin-bottom: 0;
-    margin-top: 0;
-    height: 60%;
+    flex-direction: row-reverse;
+    height: 55%;
 }
 
 .skills-lines {
@@ -52,7 +54,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-top: 1.2%;
+    margin-top: 1.5%;
 }
 
 .skill-line {
@@ -61,7 +63,7 @@
     grid-template-rows: 0fr 0fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    margin-left: -100vw;
+    margin-left: -105vw;
 }
 
 .skill-line > p {
@@ -75,37 +77,87 @@
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #1C3648 50%);
     width: 100vw;
     transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
-    background-size: 1000% 100%;
+    background-size: 200% 100%;
+}
+
+.skill-bar > p {
+    float: right;
+    margin-top: calc(0.75vw + 0.5vh);
+    font-size: calc(0.75vw + 0.5vh);
+    color: #1C3648;
 }
 
 .skill-bar-html {
-    right: 0vw;
+    margin-left: 4vw;
 }
 
 .skill-bar-js {
-    right: -2vw;
+    margin-left: 5vw;
 }
 
 .skill-bar-vue {
-    right: 3vw;
+    margin-left: 3vw;
 }
 
 .skill-bar-react {
-    right: 5vw;
+    margin-left: 0vw;
 }
 
 .skill-bar-css {
-    right: 0vw;
+    margin-left: 2vw;
 }
 
 .skill-bar-php {
-    right: -1vw;
+    margin-left: 4vw;
 }
 
 .skill-bar-symfony {
-    right: -1vw;
+    margin-left: 4vw;
 }
 
 .skill-bar-sql {
-    right: 1vw;
+    margin-left: 2vw;
+}
+
+.bar-menu2 {
+    height: calc(1.5vw + 1vh);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #1C3648 50%);
+    position: absolute;
+    width: 13vw;
+    transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
+    background-position: -10.5vw -100%;
+    background-size: 200% 100%;
+    left: 0;
+}
+
+.bar-menu2:hover {
+    background-position: 0% -100%;
+    cursor: pointer;
+}
+
+.bar-menu2 p {
+    text-align: end;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #1C3648 0%); */
+    background-image: linear-gradient(90deg, rgba(241,240,234,1) 50%, rgba(28,54,72,1) 50%);
+    /* font: 700 15vw 'Open Sans', sans-serif; */
+    position: absolute;
+    margin: 0;
+    font-size: calc(1.2vw + 0.8vh);
+    margin-top: -0.2%;
+    /* color: #1C3648; */
+    color: transparent;
+    background-position: -10.5vw 100%;
+    background-size: 200% 100%;
+    transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
+    width: 100%;
+    /* margin-right: 0; */
+    /* text-align: center; */
+    /* margin-left: 36vw;*/
+}
+
+.bar-menu2:hover > p {
+    background-position: 0% -100%;
 }
