@@ -49,12 +49,12 @@
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 0;
-    height: 90vh;
+    height: 80vh;
     width: 0.5vw;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-top: 1.5%;
+    margin-top: 2%;
 }
 
 .skill-line {
@@ -73,7 +73,7 @@
 }
 
 .skill-bar {
-    height: calc(0.75vw + 0.5vh);
+    height: calc(0.50vw + 0.375vh);
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #1C3648 50%);
     width: 100vw;
     transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
@@ -82,7 +82,7 @@
 
 .skill-bar > p {
     float: right;
-    margin-top: calc(0.75vw + 0.5vh);
+    margin-top: calc(0.50vw + 0.375vh);
     font-size: calc(0.75vw + 0.5vh);
     color: #1C3648;
 }
@@ -145,7 +145,7 @@
     /* font: 700 15vw 'Open Sans', sans-serif; */
     position: absolute;
     margin: 0;
-    font-size: calc(1.2vw + 0.8vh);
+    font-size: calc(1vw + 0.8vh);
     margin-top: -0.2%;
     /* color: #1C3648; */
     color: transparent;
@@ -160,4 +160,87 @@
 
 .bar-menu2:hover > p {
     background-position: 0% -100%;
+}
+
+.h1-container-skills {
+    margin-top: calc(0.5vw + 0.2vh);
+}
+
+.h1-container-skills > h1{
+    text-align: center;
+    font-size: 4.5vw;
+    font-family: "nimbusReg";
+    color: #1C3648;
+    margin-top: calc(1.5vw + 1vh);
+    margin-bottom: 4%;
+}
+
+.skills-grid-container {
+    width: 50vw;
+    margin: 0 auto;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 4vh;
+}
+
+.h-skill {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.h-skill-logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hexagon-skill-part {
+    float: left;
+    margin: 0 auto;
+}
+
+.hexagon-skill-shape {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    width: 8vw;
+    height: 8vw;
+    transform: skewX(30deg) scaleY(.866);
+}
+.hexagon-skill-shape:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-color: #dedfdb;
+    content: '';
+}
+
+.h-skill-text {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.h-skill-text > p {
+    font-family: "nimbusReg";
+    line-height: 1.6;
+    font-size: calc(0.75vw + 0.5vh);
+    color: #1C3648;
+}
+
+.skill-icon {
+    position: absolute;
+    width: 3vw;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
