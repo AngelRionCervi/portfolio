@@ -1,0 +1,37 @@
+/*global vars*/
+
+
+@font-face {
+    font-family: "nimbusReg";
+    src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "nimbusBold";
+    src: url("../font/Montserrat-Bold.ttf");
+}
+
+* {
+    font-size: 18px;
+    font-family: "nimbusReg";
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+
+  --el-color: #1C3648;
+  --bg-color: #f1f0ea;
+  --shade-0: #dedfdb;
+  --shade-1: #ced1cf;
+  --shade-2: #879399;
+  --shade-3: #63747e;
+  --shade-4: #405563;
+
+  --main-border-height: calc(1.8vw + 1.4vh);
+  --medium-border-height: calc(0.50vw + 0.375vh);
+  --small-border-height: 0.2vw;
+  --main-cubic-bezier: cubic-bezier(0.08, 0.3, 0.75, 0.95);
+
+  --line-height: 1.6;
+
+}

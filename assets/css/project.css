@@ -1,43 +1,10 @@
-.preload * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-}
 
-.supercontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f1f0ea;
-    box-shadow: inset 0px 0px 0px calc(1.5vw + 1vh) #1C3648;
-}
 
 #project_section {
     display: none;
 }
 
-@font-face {
-    font-family: "nimbusReg";
-    src: url("../font/NimbusSanL-Reg.otf");
-}
-@font-face {
-    font-family: "nimbusBold";
-    src: url("../font/NimbusSanL-Bol.otf");
-}
-* {
-    font-size: 18px;
-    font-family: "nimbusReg";
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 .mainTitle {
     padding: 0;

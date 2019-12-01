@@ -3,17 +3,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 6vh;
+    grid-row-gap: 4vh;
     position:absolute;
-    top: calc(1.5vw + 1vh);
-    right: calc(1.5vw + 1vh + 10vw);
-    width: 35vw;
+    top: var(--main-border-height);
+    right: calc(var(--main-border-height) + 14vw);
 }
 
 .contact-title > h1 {
     align-items: end;
     font-size: 2.2vw;
-    color: #1C3648;
+    color: var(--el-color);
     font-family: "nimbusReg";
     margin-top: calc(2vw + 1vh);
     text-align: end;
@@ -31,10 +30,10 @@
 	background: transparent;
     border: none;
     outline: none;
-    border-left: calc(0.4vw + 0.2vh) solid #1C3648;
-    border-right: calc(0.4vw + 0.2vh) solid #1C3648;
+    border-left: var(--medium-border-height) solid var(--el-color);
+    border-right: var(--medium-border-height) solid var(--el-color);
     padding: 1vw;
-    color: #1C3648;
+    color: var(--el-color);
     font-size: 1vw;
 }
 
@@ -46,9 +45,9 @@
 	background: transparent;
     border: none;
     outline: none;
-    border-left: calc(0.4vw + 0.2vh) solid transparent;
+    border-left: var(--medium-border-height) solid transparent;
     padding: 1vw;
-    color: #1C3648;
+    color: var(--el-color);
     font-size: 1vw;
     resize: none;
     width: calc(100% - 3vw);
@@ -57,9 +56,9 @@
 }
 
 .textarea-border-left {
-	width: calc(0.4vw + 0.2vh);
+	width: var(--medium-border-height);
 	height: 100%;
-	background-color: #1C3648;
+	background-color: var(--el-color);
 	position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +66,7 @@
 
 .textarea-border-bottom {
 	width: 4vw;
-	height: calc(0.4vw + 0.2vh);
+	height: var(--medium-border-height);
 	background-color: transparent;
 	position: absolute;
     bottom: 0;
@@ -75,9 +74,9 @@
 }
 
 .textarea-border-right {
-	width: calc(0.4vw + 0.2vh);
+	width: var(--medium-border-height);
 	height: 4vw;
-	background-color: #1C3648;
+	background-color: var(--el-color);
 	position: absolute;
     top: 0;
     right: 0;
@@ -89,9 +88,9 @@
 	bottom: calc(-1.2vw + -0.6vh);
 	height: calc(1.2vw + 0.6vh);
 	width: 5vw;
-	background-color: #1C3648;
+	background-color: var(--el-color);
 	border: 0;
-	color: #f1f0ea;
+	color: var(--bg-color);
 	outline: none;
 	cursor: pointer;
 	font-size: 1vw;
@@ -115,60 +114,49 @@
 }
 
 .contact-dot-1 {
-    height: 1.5vw;
-    width: 1.5vw;
-    background-color: #ced1cf;
+    height: 0.75vw;
+    width: 0.75vw;
+    background-color: var(--shade-1);
     border-radius: 50%;
     margin: 0 auto;
 }
 
 .contact-dot-2 {
-    height: 2.25vw;
-    width: 2.25vw;
-    background-color: #879399;
+    height: 1.125vw;
+    width: 1.125vw;
+    background-color: var(--shade-2);
     border-radius: 50%;
     margin: 0 auto;
 }
 
 .contact-dot-3 {
-    height: 3.375vw;
-    width: 3.375vw;
-    background-color: #63747e;
+    height: 1.6875vw;
+    width: 1.6875vw;
+    background-color: var(--shade-3);
     border-radius: 50%;
     margin: 0 auto;
 }
 
 .contact-dot-4 {
-    height: 5.063vw;
-    width: 5.063vw;
-    background-color: #405563;
+    height: 2.5315vw;
+    width: 2.5315vw;
+    background-color: var(--shade-4);
     border-radius: 50%;
     margin: 0 auto;
 }
 
 .contact-dot-5 {
-    height: 7.594vw;
-    width: 7.594vw;
-    background-color: #1C3648;
+    height: 3.797vw;
+    width: 3.797vw;
+    background-color: var(--el-color);
     border-radius: 50%;
     margin: 0 auto;
 }
 
-.right-dots-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(11, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 1.2vw;
-    position: absolute;
-    top: calc(2vw + 1vh);
-    right: calc(2vw + 1vh);
-}
-
 .big-line {
 	width: 100%;
-	height: calc(0.4vw + 0.2vh);
-	background-color: #f1f0ea;
+	height: 0.2vw;
+	background-color: var(--bg-color);
 	position: absolute;
     top: 4vw;
     transform: rotate(-5deg);
@@ -176,8 +164,8 @@
 
 .small-line {
 	width: 30%;
-    height: calc(0.4vw + 0.2vh);
-    background-color: #f1f0ea;
+    height: 0.2vw;
+    background-color: var(--bg-color);
     position: absolute;
     top: 5vw;
     right: 1.5vw;

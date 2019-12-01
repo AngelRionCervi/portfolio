@@ -4,7 +4,7 @@
 	width: 55%;
     float: right;
     margin-right: calc(1.5vw + 1vh + 10vw);
-    margin-top: calc(1.5vw + 1vh);
+    margin-top: var(--main-border-height);
 }
 
 .h1-container > h1 {
@@ -12,8 +12,8 @@
 	font-size: 4.5vw;
 	text-align: end;
 	font-family: "nimbusReg";
-	color: #1C3648;
-	margin-top: calc(1.5vw + 1vh);
+	color: var(--el-color);
+	margin-top: var(--main-border-height);
 	margin-bottom: 4%;
 }
 
@@ -37,8 +37,8 @@
 	font-size: calc(1vw + 0.6vh);
 	font-style: italic;
 	font-family: "nimbusBold";
-	color: #1C3648;
-	margin-left: calc(1.5vw + 1vh);
+	color: var(--el-color);
+	margin-left: var(--main-border-height);
 }
 
 .hexagon-part {
@@ -62,14 +62,14 @@
     left: 6.7%;
     top: 0;
     transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
-    background-color: #dedfdb;
+    background-color: var(--shade-0);
     content: '';
 }    
 
 .lil-dot {
 	height: 2.5vw;
   	width: 2.5vw;
-  	background-color: #1C3648;
+  	background-color: var(--el-color);
   	border-radius: 50%;
   	display: inline-block;
   	margin-left: 12vw;
@@ -79,7 +79,7 @@
 .big-dot {
 	height: 6vw;
   	width: 6vw;
-  	background-color: #1C3648;
+  	background-color: var(--el-color);
   	border-radius: 50%;
   	display: inline-block;
   	margin-top: 2vw;
@@ -88,21 +88,21 @@
 
 .small-line {
 	width: 7vw;
-    height: 0.2vw;
+    height: var(--small-border-height);
     position: absolute;
     left: -2.5vw;
     top: 3vw;
     transform: rotate(90deg);
-    background-color: #f1f0ea;
+    background-color: var(--bg-color);
 }
 
 .text-container {
 	width: 90%;
 	margin-top: 8%;
-	color: #1C3648;
+	color: var(--el-color);
 }
 
 .text-container > p {
-	line-height: 1.6;
+	line-height: var(--line-height);
 	font-size: calc(0.8vw + 0.6vh);
 }

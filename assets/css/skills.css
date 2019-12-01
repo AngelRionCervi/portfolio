@@ -13,10 +13,10 @@
     grid-column-gap: 0;
     grid-row-gap: 0;
     width: 18vw;
-    border-left: calc(1.5vw + 1vh) solid #1C3648;
-    border-bottom: calc(1.5vw + 1vh) solid #1C3648;
-    border-top: calc(1.5vw + 1vh) solid transparent;
-    height: calc(100vh - calc(1.5vw + 1vh) - calc(1.5vw + 1vh));
+    border-left: var(--main-border-height) solid var(--el-color);
+    border-bottom: var(--main-border-height) solid var(--el-color);
+    border-top: var(--main-border-height) solid transparent;
+    height: calc(100vh - var(--main-border-height) - var(--main-border-height));
     z-index: 2;
 }
 
@@ -26,14 +26,13 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 0;
-    margin-top: calc(1.5vw + 1vh);
+    margin-top: var(--main-border-height);
 }
 
 .menu2 p {
-    font-size: calc(1.5vw + 1vh);
-    color: #1C3648;
+    font-size: var(--main-border-height);
+    color: var(--el-color);
     font-family: "nimbusBold";
-    height: 100%;
 }
 
 .line-menu2 {
@@ -73,18 +72,18 @@
 }
 
 .skill-bar {
-    height: calc(0.50vw + 0.375vh);
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #1C3648 50%);
+    height: var(--medium-border-height);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--el-color) 50%);
     width: 100vw;
-    transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
+    transition: background-position 0.6s var(--main-cubic-bezier);
     background-size: 200% 100%;
 }
 
 .skill-bar > p {
     float: right;
-    margin-top: calc(0.50vw + 0.375vh);
+    margin-top: var(--medium-border-height);
     font-size: calc(0.75vw + 0.5vh);
-    color: #1C3648;
+    color: var(--el-color);
 }
 
 .skill-bar-html {
@@ -120,14 +119,16 @@
 }
 
 .bar-menu2 {
-    height: calc(1.5vw + 1vh);
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #1C3648 50%);
+    height: var(--main-border-height);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--el-color) 50%);
     position: absolute;
     width: 13vw;
-    transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
-    background-position: -10.5vw -100%;
+    transition: background-position 0.6s var(--main-cubic-bezier);
+    background-position: -10vw -100%;
     background-size: 200% 100%;
     left: 0;
+    display: flex;
+    align-items: center;
 }
 
 .bar-menu2:hover {
@@ -139,23 +140,16 @@
     text-align: end;
     -webkit-background-clip: text;
     background-clip: text;
-    /* -webkit-text-fill-color: transparent; */
-    /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #1C3648 0%); */
     background-image: linear-gradient(90deg, rgba(241,240,234,1) 50%, rgba(28,54,72,1) 50%);
-    /* font: 700 15vw 'Open Sans', sans-serif; */
     position: absolute;
     margin: 0;
     font-size: calc(1vw + 0.8vh);
     margin-top: -0.2%;
-    /* color: #1C3648; */
     color: transparent;
-    background-position: -10.5vw 100%;
+    background-position: -10vw 100%;
     background-size: 200% 100%;
-    transition: background-position 0.6s cubic-bezier(0.08, 0.3, 0.75, 0.95);
+    transition: background-position 0.6s var(--main-cubic-bezier);
     width: 100%;
-    /* margin-right: 0; */
-    /* text-align: center; */
-    /* margin-left: 36vw;*/
 }
 
 .bar-menu2:hover > p {
@@ -170,8 +164,8 @@
     text-align: center;
     font-size: 4.5vw;
     font-family: "nimbusReg";
-    color: #1C3648;
-    margin-top: calc(1.5vw + 1vh);
+    color: var(--el-color);
+    margin-top: var(--main-border-height);
     margin-bottom: 4%;
 }
 
@@ -236,9 +230,9 @@
 
 .h-skill-text > p {
     font-family: "nimbusReg";
-    line-height: 1.6;
+    line-height: var(--line-height);
     font-size: calc(0.75vw + 0.5vh);
-    color: #1C3648;
+    color: var(--el-color);
 }
 
 .skill-icon {
@@ -256,7 +250,7 @@
 .top-circle-1 {
     height: 0.7vw;
     width: 0.7vw;
-    background-color: #63747E;
+    background-color: var(--shade-3);
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -267,7 +261,7 @@
 .top-circle-2 {
     height: 1.5vw;
     width: 1.5vw;
-    background-color: #405563;
+    background-color: var(--shade-4);
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -279,7 +273,7 @@
 .bottom-circle-1 {
     height: 1.3vw;
     width: 1.3vw;
-    background-color: #1C3648;
+    background-color: var(--el-color);
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -290,7 +284,7 @@
 .bottom-circle-2 {
     height: 1vw;
     width: 1vw;
-    background-color: #879399;
+    background-color: var(--shade-2);
     border-radius: 50%;
     display: inline-block;
     position: absolute;
