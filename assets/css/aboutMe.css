@@ -3,20 +3,11 @@
 	cursor: default !important;
 }
 
-.bar-active > p {
-	
-}
-
-
 .about-me-container {
 	width: 55%;
     float: right;
     margin-right: calc(1.5vw + 1vh + 10vw);
     margin-top: calc(1.5vw + 1vh);
-}
-
-.h1-container {
-
 }
 
 .h1-container > h1 {

@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    {{ encore_entry_link_tags('contact') }}
+{% endblock %}
+{% block content %}
+    <div class="full-border-top"></div>
+    <div class="supercontainer">
+
+        <div id="me_section" class="me-section">
+            <div class="row-left">
+                <div class="name">
+                    <p>Angel</p>
+                    <p>Rion -</p>
+                    <p>Cervi</p>
+                </div>
+                <div class="profession">
+                    <p>Web developer</p>
+                    <p>PHP / JS</p>
+                </div>
+                <div class="icons-contact">
+                    <div class="github-icon">
+                        <img class="github-icon" src="images/specs/github.svg" alt="github icon">
+                    </div>
+                    <div class="gitlab-icon">
+                        <img class="github-icon" src="images/specs/gitlab.svg" alt="gitlab icon">
+                    </div>
+                    <div class="linkedin-icon">
+                        <img class="linkedin-icon" src="images/specs/linkedin.svg" alt="linkedin icon">
+                    </div>
+                </div>
+            </div>
+            <div class="row-middle">
+                <div class="border-skew"></div>
+                <div class="career-lines">
+                    <div class="line">
+                        <div class="bar bar1"><p>About Me&nbsp</p></div>
+                    </div>
+                    <div class="line">
+                        <div class="bar bar2"><p>Projects&nbsp</p></div>
+                    </div>
+                    <div class="line">
+                        <div class="bar bar3"><p>Skills&nbsp</p></div>
+                    </div>
+                    <div class="line">
+                        <div class="bar bar4"><p>Contact&nbsp</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-right">
+                <div class="right-dots-container">
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                    <div class="right-dot"></div>
+                </div>
+                <div class="contact-right-content">
+                    <div class="contact-title">
+                        <h1>Feel free to contact me for work<br>or just to chat!</h1>
+                    </div>
+                    <div class="msg-container">
+                        <input class="email-input" type="email" placeholder="Email">
+                        <div class="text-area-container">
+                            <textarea class="msg-textarea" placeholder="Message"></textarea>
+                            <div class="textarea-border-left"></div>
+                            <div class="textarea-border-bottom"></div>
+                            <div class="textarea-border-right"></div>
+                            <button type="submit" class="buttom-send">Send</button>
+                        </div>
+                    </div>
+                    <div class="contact-bottom">
+                        <div class="contact-bottom-dots-container">
+                            <div class="contact-dot-1"></div>
+                            <div class="contact-dot-2"></div>
+                            <div class="contact-dot-3"></div>
+                            <div class="contact-dot-4"></div>
+                            <div class="contact-dot-5"></div>
+                        </div>
+                        <div class="big-line"></div>
+                        <div class="small-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}

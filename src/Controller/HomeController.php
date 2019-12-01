@@ -41,4 +41,13 @@ class HomeController extends AbstractController
 
         return $this->render('skills.html.twig');
     }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contactAction()
+    {
+
+        return $this->render('contact.html.twig');
+    }
 }

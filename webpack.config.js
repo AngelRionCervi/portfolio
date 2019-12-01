@@ -27,6 +27,7 @@ Encore
     .addEntry('projects', './assets/js/projects.js')
     .addEntry('aboutMeCss', './assets/css/aboutMe.css')
     .addEntry('skills', './assets/css/skills.css')
+    .addEntry('contact', './assets/css/contact.css')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
