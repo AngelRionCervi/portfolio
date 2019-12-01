@@ -11,6 +11,11 @@
    font-style: italic; 
 }
 
+.bar-active {
+    background-position: 0% 100% !important;
+    cursor: default !important;
+}
+
 .full-border-top {
     position: absolute;
     top: 0;
@@ -188,78 +193,6 @@
     height: 90vh;
     float: right;
     width: 55vw;
-}
-
-.hey {
-    margin-top: -2vw;
-}
-
-.hey > p {
-    font-family: "nimbusBold";
-    font-size: 20vw;
-    color: #1C3648;
-    text-align: end;
-    margin: 0;
-    margin-right: calc(7vw + 6vh);
-}
-
-.welcome > p {
-    font-family: "nimbusReg";
-    font-size: 2vw;
-    color: #1C3648;
-    text-align: start;
-    margin: 0;
-}
-
-.ooooo {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    display: flex;
-    align-items: center;
-    width: 80%;
-}
-
-.home-dot-1 {
-    height: 1.5vw;
-    width: 1.5vw;
-    background-color: #ced1cf;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.home-dot-2 {
-    height: 2.427vw;
-    width: 2.427vw;
-    background-color: #879399;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.home-dot-3 {
-    height: 3.927vw;
-    width: 3.927vw;
-    background-color: #63747e;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.home-dot-4 {
-    height: 6.354vw;
-    width: 6.354vw;
-    background-color: #405563;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.home-dot-5 {
-    height: 10.28vw;
-    width: 10.28vw;
-    background-color: #1C3648;
-    border-radius: 50%;
-    margin: 0 auto;
 }
 
 .right-dots-container {
