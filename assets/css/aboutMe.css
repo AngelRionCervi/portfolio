@@ -13,7 +13,7 @@
 	text-align: end;
 	font-family: "nimbusReg";
 	color: var(--el-color);
-	margin-top: var(--main-border-height);
+	margin-top: 4%;
 	margin-bottom: 4%;
 }
 
