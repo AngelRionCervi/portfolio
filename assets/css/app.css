@@ -28,8 +28,8 @@
   --shade-4: #405563;
 
   --main-border-height: calc(1.8vw + 1.4vh);
-  --medium-border-height: calc(0.50vw + 0.375vh);
-  --small-border-height: 0.2vw;
+  --medium-border-height: calc(0.35vw + 0.275vh);
+  --small-border-height: 0.25vw;
   --main-cubic-bezier: cubic-bezier(0.08, 0.3, 0.75, 0.95);
 
   --line-height: 1.6;

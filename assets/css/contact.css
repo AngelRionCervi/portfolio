@@ -3,15 +3,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 4vh;
+    grid-row-gap: 6vh;
     position:absolute;
     top: var(--main-border-height);
     right: calc(var(--main-border-height) + 14vw);
+    width: 36vw;
 }
 
 .contact-title > h1 {
     align-items: end;
-    font-size: 2.2vw;
+    font-size: 2vw;
     color: var(--el-color);
     font-family: "nimbusReg";
     margin-top: calc(2vw + 1vh);
@@ -67,7 +68,7 @@
 .textarea-border-bottom {
 	width: 4vw;
 	height: var(--medium-border-height);
-	background-color: transparent;
+	background-color: var(--el-color);
 	position: absolute;
     bottom: 0;
     right: 0;
@@ -100,15 +101,17 @@
 	position: relative;
 	display: flex;
     align-items: center;
+    width: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .contact-bottom-dots-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    display: flex;
     align-items: center;
     width: 100%;
 }
@@ -130,44 +133,123 @@
 }
 
 .contact-dot-3 {
-    height: 1.6875vw;
-    width: 1.6875vw;
-    background-color: var(--shade-3);
+    height: 1.2vw;
+    width: 1.2vw;
+    background-color: var(--shade-2);
     border-radius: 50%;
     margin: 0 auto;
 }
 
 .contact-dot-4 {
-    height: 2.5315vw;
-    width: 2.5315vw;
-    background-color: var(--shade-4);
+    height: 1vw;
+    width: 1vw;
+    background-color: var(--shade-2);
     border-radius: 50%;
     margin: 0 auto;
 }
 
 .contact-dot-5 {
-    height: 3.797vw;
-    width: 3.797vw;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.contact-dot-5 > .circle > .dot {
+    height: 7vw;
+    width: 7vw;
     background-color: var(--el-color);
     border-radius: 50%;
     margin: 0 auto;
-}
-
-.big-line {
-	width: 100%;
-	height: 0.2vw;
-	background-color: var(--bg-color);
-	position: absolute;
-    top: 4vw;
-    transform: rotate(-5deg);
-}
-
-.small-line {
-	width: 30%;
-    height: 0.2vw;
-    background-color: var(--bg-color);
     position: absolute;
-    top: 5vw;
-    right: 1.5vw;
-    transform: rotate(40deg);
+    z-index: -1;
+    left: -2px;
+
 }
+
+.contact-dot-5 > .circle {
+    height: 6vw;
+    width: 6vw;
+    border: 1vw solid var(--bg-color);
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contact-dot-5 > .circle > .small-line-1 {
+	position: absolute;
+	height: var(--small-border-height);
+	width: 1.8vw;
+	top: 1vw;
+	left: 0;
+	background-color: var(--shade-4);
+	z-index: -1;
+	border-radius: 50px;
+}
+
+.contact-dot-5 > .circle > .small-line-2 {
+	position: absolute;
+	height: var(--small-border-height);
+	width: 1.8vw;
+	bottom: 1vw;
+	right: 0;
+	background-color: var(--shade-4);
+	z-index: -1;
+	border-radius: 50px;
+}
+
+.contact-dot-5 > .circle > .send-button {
+	color: var(--bg-color);
+	font-size: 1vw;
+	font-family: "nimbusBold";
+	margin: 0 auto;
+	border: none;
+	background: transparent;
+	outline: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.contact-dot-6 {
+	height: 2.7vw;
+    width: 2.7vw;
+    background-color: var(--shade-4);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact-dot-6 > .small-line {
+	transform: rotate(40deg);
+	height: var(--small-border-height);
+	width: 4vw;
+	position: absolute;
+	left: -28%;
+    top: 40%;
+    background-color: var(--bg-color);
+}
+
+.contact-dot-7 {
+	height: 1.6vw;
+    width: 1.6vw;
+    background-color: var(--shade-2);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact-dot-8 {
+	height: 1.3vw;
+    width: 1.3vw;
+    background-color: var(--shade-1);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+
