@@ -64,17 +64,22 @@
                 </div>
                 <div class="contact-right-content">
                     <div class="contact-title">
-                        <h1>Feel free to contact me for work<br>or just to chat!</h1>
+                        {% if messaged %}
+                            <h1>I've received your message ! Replying soon !</h1>
+                        {% else %}
+                            <h1>Feel free to contact me for work<br>or just to chat!</h1>
+                        {% endif %}
                     </div>
+                    {{ form_start(form) }}
                     <div class="msg-container">
-                        <input class="email-input" type="email" placeholder="Email">
+                        {{ form_widget(form.email, {'attr': {'class': 'email-input'}}) }}
                         <div class="text-area-container">
-                            <textarea class="msg-textarea" placeholder="Message"></textarea>
+                            {{ form_widget(form.message, {'attr': {'class': 'msg-textarea'}}) }}
                             <div class="textarea-border-left"></div>
                             <div class="textarea-border-bottom"></div>
                             <div class="textarea-border-right"></div>
-                            <!--<button type="submit" class="buttom-send">Send</button>-->
                         </div>
+
                     </div>
                     <div class="contact-bottom">
                         <div class="contact-bottom-dots-container">
@@ -98,6 +103,7 @@
                         </div>
                         <div class="small-line"></div>
                     </div>
+                    {{ form_end(form) }}
                 </div>
             </div>
         </div>

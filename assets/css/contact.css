@@ -1,7 +1,7 @@
 .contact-right-content {
 	display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 4fr;
     grid-column-gap: 0px;
     grid-row-gap: 6vh;
     position:absolute;
@@ -114,6 +114,7 @@
     grid-row-gap: 0px;
     align-items: center;
     width: 100%;
+    margin-top: 6vh;
 }
 
 .contact-dot-1 {
