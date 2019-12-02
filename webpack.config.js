@@ -25,6 +25,7 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('projects', './assets/js/projects.js')
+    .addEntry('contactjs', './assets/js/contact.js')
     .addEntry('aboutMeCss', './assets/css/aboutMe.css')
     .addEntry('skills', './assets/css/skills.css')
     .addEntry('contact', './assets/css/contact.css')
