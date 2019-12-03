@@ -300,8 +300,8 @@
 
 @keyframes jupiterSlideTopBack {
     from {
-        left: 25%;
-        transform: translate(25%, 0);
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     to {
