@@ -40,10 +40,54 @@
         </div>
         <div class="row-middle">
             <div class="border-skew"></div>
-
+            <div class="project-lines">
+                {% for project in projects %}
+                    <div class="line project-line">
+                        <div class="bar project-bar"><p>{{ project.title }}&nbsp</p></div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
         <div class="row-right">
+            <div class="right-stuff-project">
+                <div class="github-triangle">
+                    <a href="#">
+                        <img class="github-project" src="images/specs/github-inverted.svg" alt="github project icon">
+                    </a>
+                </div>
+                <div class="little-dots-container">
+                    <div class="right-dot right-dot-project"></div>
+                    <div class="right-dot right-dot-project"></div>
+                    <div class="right-dot right-dot-project"></div>
+                    <div class="right-dot right-dot-project"></div>
+                    <div class="right-dot right-dot-project"></div>
+                    <div class="right-dot right-dot-project"></div>
+                    <div class="right-dot right-dot-project"></div>
+                    <div class="right-dot right-dot-project"></div>
+                </div>
+            </div>
+            <div class="grid-project-content">
+                <div class="title-project">
+                    <div class="title-project-container">
+                        <p>1.</p>
+                        <h1>Emojifier</h1>
+                    </div>
+                </div>
+                <div class="image-project">
+                    <img src="images/emojifier/linku.png" alt="image of project">
+                </div>
+                <div class="desc-project">
+                    <div class="desc-triangle"></div>
+                    <div class="desc-grid">
+                        <div class="project-description">
+                            <p>Emojifier is an app that let you transform images (jpg or png) in a mosaique of emojis. You can choose between 2 algos and have different options for sampling and emoji size</p>
+                        </div>
+                        <div class="project-skills-used">
 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

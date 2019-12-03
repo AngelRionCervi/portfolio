@@ -1,0 +1,139 @@
+.project-lines {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    height: 80vh;
+    width: 0.5vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.project-line {
+
+}
+
+.project-line > p {
+
+}
+
+.project-bar {
+
+}
+
+.project-bar > p {
+    font-size: calc(0.7vw + 0.45vh);
+}
+
+.right-stuff-project {
+    position: absolute;
+    top: var(--main-border-height);
+    right: var(--main-border-height);
+    width: 12vw;
+}
+
+.github-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -1px;
+    right: -1px;
+    border-style: solid;
+    border-width: 0 12vw 12vw 0;
+    border-color: transparent var(--el-color) transparent transparent;
+}
+
+.little-dots-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 1.2vw;
+    margin-top: 12vw;
+    position: absolute;
+    top: 0.6vw;
+    right: 0.6vw;
+ }
+
+.right-dot-project {
+    margin: 0;
+    background-color: var(--el-color);
+}
+
+.github-project {
+    width: 3vw;
+    margin-left: 7vw;
+    margin-top: 2vw;
+}
+
+.grid-project-content {
+    height: 100vh;
+    width: 60vw;
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 2fr;
+    grid-column-gap: 0;
+    grid-row-gap: 2vw;
+}
+
+.title-project-container {
+    margin-top: 8vh;
+}
+
+.title-project-container > p {
+    margin: 0;
+    display: inline;
+    font-size: 1.5vw;
+    color: var(--el-color);
+}
+
+.title-project-container > h1 {
+    margin: 0;
+    font-size: 4vw;
+    display: inline;
+    margin-left: 5vw;
+    color: var(--el-color);
+}
+
+.image-project > img {
+    width: 38vw;
+    object-fit: cover;
+    height: auto;
+    max-height: 100%;
+}
+
+.desc-project {
+    background-color: var(--el-color);
+    position: relative;
+}
+
+.desc-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -1px;
+    right: -1px;
+    left: -6vw;
+    border-style: solid;
+    border-width: 0  0 6vw 6vw;
+    border-color: transparent transparent var(--el-color) transparent;
+}
+
+.desc-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.project-description > p {
+    color: var(--bg-color);
+    margin: 0;
+    margin-left: var(--main-border-height);
+    margin-top: var(--main-border-height);
+    line-height: var(--line-height);
+
+}

@@ -21,7 +21,6 @@ class HomeController extends AbstractController
         $projectsJson = file_get_contents("../assets/json/projects.json");
         $projects = json_decode($projectsJson, true);
 
-
         return $this->render('index.html.twig', [
             "projects" => $projects
         ]);
@@ -96,7 +95,11 @@ class HomeController extends AbstractController
      */
     public function projectsAction()
     {
+        $projectsJson = file_get_contents("../assets/json/projects.json");
+        $projects = json_decode($projectsJson, true);
 
-        return $this->render('projects.html.twig');
+        return $this->render('projects.html.twig', [
+            "projects" => $projects
+        ]);
     }
 }
