@@ -85,10 +85,18 @@ class HomeController extends AbstractController
             ]);
         }
 
-
         return $this->render('contact.html.twig', [
             'form' => $formContact->createView(),
             'messaged' => false
         ]);
+    }
+
+    /**
+     * @Route("/projects", name="projects")
+     */
+    public function projectsAction()
+    {
+
+        return $this->render('projects.html.twig');
     }
 }

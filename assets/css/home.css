@@ -208,7 +208,6 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 90vh;
-    height: 90vh;
     float: right;
     width: 55vw;
 }
@@ -347,6 +346,94 @@
     left: 0;
     background-color: var(--el-color);
 }
+
+
+
+
+/* menu 2 */
+
+.skills-section {
+    display: grid;
+    grid-template-columns: 1fr 0fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.row-left-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    width: 18vw;
+    border-left: var(--main-border-height) solid var(--el-color);
+    border-bottom: var(--main-border-height) solid var(--el-color);
+    border-top: var(--main-border-height) solid transparent;
+    height: calc(100vh - var(--main-border-height) - var(--main-border-height));
+    z-index: 2;
+}
+
+.menu2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-top: var(--main-border-height);
+}
+
+.menu2 p {
+    font-size: var(--main-border-height);
+    color: var(--el-color);
+    font-family: "nimbusBold";
+}
+
+.line-menu2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 55%;
+}
+
+.bar-menu2 {
+    height: var(--main-border-height);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--el-color) 50%);
+    position: absolute;
+    width: 13vw;
+    transition: background-position 0.6s var(--main-cubic-bezier);
+    background-position: -10vw -100%;
+    background-size: 200% 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.bar-menu2:hover {
+    background-position: 0% -100%;
+    cursor: pointer;
+}
+
+.bar-menu2 p {
+    text-align: end;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(241,240,234,1) 50%, rgba(28,54,72,1) 50%);
+    position: absolute;
+    margin: 0;
+    font-size: calc(1vw + 0.8vh);
+    margin-top: -0.2%;
+    color: transparent;
+    background-position: -10vw 100%;
+    background-size: 200% 100%;
+    transition: background-position 0.6s var(--main-cubic-bezier);
+    width: 100%;
+}
+
+.bar-menu2:hover > p {
+    background-position: 0% -100%;
+}
+
 
 /*
 .bar1 {

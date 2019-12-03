@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+{{ encore_entry_link_tags('projectsCss') }}
+{% endblock %}
+{% block content %}
+<div class="full-border-top"></div>
+<div class="supercontainer">
+    <div id="skills_section" class="skills-section">
+        <div class="row-left-menu">
+            <div class="menu2">
+                <div class="line-menu2">
+                    <div class="bar-menu2"><p>Home&nbsp</p></div>
+                </div>
+                <div class="line-menu2">
+                    <div class="bar-menu2"><p>About Me&nbsp</p></div>
+                </div>
+                <div class="line-menu2">
+                    <div class="bar-menu2 bar-active"></div>
+                </div>
+                <div class="line-menu2">
+                    <div class="bar-menu2"><p>Skills&nbsp</p></div>
+                </div>
+                <div class="line-menu2">
+                    <div class="bar-menu2"><p>Contact&nbsp</p></div>
+                </div>
+            </div>
+            <div class="icons-contact">
+                <div class="github-icon">
+                    <img class="github-icon" src="images/specs/github.svg" alt="github icon">
+                </div>
+                <div class="gitlab-icon">
+                    <img class="github-icon" src="images/specs/gitlab.svg" alt="gitlab icon">
+                </div>
+                <div class="linkedin-icon">
+                    <img class="linkedin-icon" src="images/specs/linkedin.svg" alt="linkedin icon">
+                </div>
+            </div>
+        </div>
+        <div class="row-middle">
+            <div class="border-skew"></div>
+
+        </div>
+        <div class="row-right">
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block javascripts %}
+{{ encore_entry_script_tags('app') }}
+{% endblock %}

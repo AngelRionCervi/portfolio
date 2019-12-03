@@ -1,46 +1,4 @@
-.skills-section {
-    display: grid;
-    grid-template-columns: 1fr 0fr 2fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-}
 
-.row-left-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10fr 1fr;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    width: 18vw;
-    border-left: var(--main-border-height) solid var(--el-color);
-    border-bottom: var(--main-border-height) solid var(--el-color);
-    border-top: var(--main-border-height) solid transparent;
-    height: calc(100vh - var(--main-border-height) - var(--main-border-height));
-    z-index: 2;
-}
-
-.menu2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    margin-top: var(--main-border-height);
-}
-
-.menu2 p {
-    font-size: var(--main-border-height);
-    color: var(--el-color);
-    font-family: "nimbusBold";
-}
-
-.line-menu2 {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    height: 55%;
-}
 
 .skills-lines {
     display: grid;

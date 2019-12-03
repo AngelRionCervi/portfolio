@@ -17,6 +17,27 @@
     font-style: normal;
 }
 
+/* ERRORS */
+
+.error_title-container > h1 {
+    text-align: center;
+    font-family: "nimbusBold";
+    color: #1C3648;
+    font-size: 404%;
+}
+
+.error_text-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.error_text-container > p {
+    color: #1C3648;
+    text-align: center;
+}
+
+/* globals */
+
 :root {
 
   --el-color: #1C3648;
