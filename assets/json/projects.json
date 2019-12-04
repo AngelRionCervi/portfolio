@@ -17,7 +17,7 @@
     ]
   },
   "renoving": {
-    "id": "3",
+    "id": "2",
     "title": "Renoving Habitat",
     "images": [
       "emojifier/linku.png",
@@ -30,12 +30,11 @@
       "sass.svg",
       "javascript.svg",
       "html5.svg",
-      "mysql.svg",
-      "php.svg"
+      "mysql.svg"
     ]
   },
   "cryptoCharts": {
-    "id": "4",
+    "id": "3",
     "title": "Crypto Board",
     "images": [
       "emojifier/samus1.jpg",
@@ -51,7 +50,7 @@
     ]
   },
   "perlinNoise": {
-    "id": "2",
+    "id": "4",
     "title": "Perlin noise map",
     "images": [
       "emojifier/samus1.jpg",
@@ -65,7 +64,7 @@
     ]
   },
   "DMAG": {
-    "id": "2",
+    "id": "5",
     "title": "Draw Me A Garden",
     "images": [
       "emojifier/samus1.jpg",

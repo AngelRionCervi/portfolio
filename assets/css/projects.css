@@ -199,3 +199,33 @@
 .skill-used-4 { grid-area: 2 / 2 / 3 / 3; }
 .skill-used-5 { grid-area: 1 / 1 / 2 / 2; }
 .skill-used-6 { grid-area: 1 / 2 / 2 / 3; }
+
+
+.image-transition-cover {
+    width: 0;
+    object-fit: cover;
+    height: 45vh;
+    background-color: var(--el-color);
+    position: absolute;
+    bottom: 0;
+}
+
+.animate-cover {
+    animation: slide-image-cover 0.6s var(--main-cubic-bezier) forwards;
+}
+
+
+@keyframes slide-image-cover {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        left: 0;
+        width: 40vw;
+    }
+    100% {
+        left: 40vw;
+        width: 0;
+    }
+}
