@@ -144,6 +144,7 @@
     margin-top: calc(var(--main-border-height) / 2);
     line-height: var(--line-height);
     transition: opacity 0.2s var(--main-cubic-bezier);
+    font-size: 1vw;
 }
 
 .nav-project-images {
