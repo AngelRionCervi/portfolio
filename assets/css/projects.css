@@ -40,7 +40,7 @@
 }
 
 .github-project {
-    width: 3.5vw;
+    width: 3vw;
     transition: transform 0.2s var(--main-cubic-bezier);
 }
 
@@ -82,7 +82,7 @@
 .image-project {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2.6fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
@@ -99,8 +99,9 @@
 .image-nav-container > img {
     width: 40vw;
     object-fit: cover;
-    height: auto;
-    max-height: 100%;
+    height: 45vh;
+    position: absolute;
+    bottom: 0;
 }
 
 .desc-project {
@@ -146,10 +147,10 @@
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    width: 3vw;
+    width: var(--main-border-height);
     height: 6vw;
     position: absolute;
-    top: 0;
+    bottom: calc(45vh - 6vw);
     left: 40vw;
     background-color: var(--el-color);
     z-index: 1;
@@ -161,7 +162,7 @@
 }
 
 .chevron-icon-project {
-    width: 1.6vw;
+    width: 1.3vw;
     margin: 0 auto;
     transition: transform 0.2s var(--main-cubic-bezier);
     cursor: pointer;
@@ -191,5 +192,4 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 2vw;
     grid-row-gap: 1.6vw;
-    margin-left: 2vw;
 }

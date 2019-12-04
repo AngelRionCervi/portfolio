@@ -1,105 +1,138 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-{{ encore_entry_link_tags('app') }}
-{{ encore_entry_link_tags('projectsCss') }}
+    {{ encore_entry_link_tags('app') }}
+    {{ encore_entry_link_tags('projectsCss') }}
 {% endblock %}
 {% block content %}
-<div class="full-border-top"></div>
-<div class="supercontainer">
-    <div id="skills_section" class="skills-section">
-        <div class="row-left-menu">
-            <div class="menu2">
-                <div class="line-menu2">
-                    <div class="bar-menu2"><p>Home&nbsp</p></div>
-                </div>
-                <div class="line-menu2">
-                    <div class="bar-menu2"><p>About Me&nbsp</p></div>
-                </div>
-                <div class="line-menu2">
-                    <div class="bar-menu2 bar-active"></div>
-                </div>
-                <div class="line-menu2">
-                    <div class="bar-menu2"><p>Skills&nbsp</p></div>
-                </div>
-                <div class="line-menu2">
-                    <div class="bar-menu2"><p>Contact&nbsp</p></div>
-                </div>
-            </div>
-            <div class="icons-contact">
-                <div class="github-icon">
-                    <img class="github-icon" src="images/specs/github.svg" alt="github icon">
-                </div>
-                <div class="gitlab-icon">
-                    <img class="github-icon" src="images/specs/gitlab.svg" alt="gitlab icon">
-                </div>
-                <div class="linkedin-icon">
-                    <img class="linkedin-icon" src="images/specs/linkedin.svg" alt="linkedin icon">
-                </div>
-            </div>
-        </div>
-        <div class="row-middle">
-            <div class="border-skew"></div>
-            <div class="project-lines">
-                {% for project in projects %}
-                    <div class="line project-line">
-                        <div class="bar project-bar"><p>{{ project.title }}&nbsp</p></div>
+    <div class="full-border-top"></div>
+    <div class="supercontainer">
+        <div id="skills_section" class="skills-section">
+            <div class="row-left-menu">
+                <div class="menu2">
+                    <div class="line-menu2">
+                        <div class="bar-menu2"><p>Home&nbsp</p></div>
                     </div>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="row-right">
-            <div class="right-stuff-project">
-                <div class="github-button">
-                    <a href="#" class="github-button-link">
-                        <img class="github-project" src="images/specs/github-inverted.svg" alt="github project icon">
-                    </a>
-                </div>
-            </div>
-            <div class="grid-project-content">
-                <div class="title-project">
-                    <div class="title-project-container">
-                        <p>1.</p>
-                        <h1>Emojifier</h1>
+                    <div class="line-menu2">
+                        <div class="bar-menu2"><p>About Me&nbsp</p></div>
+                    </div>
+                    <div class="line-menu2">
+                        <div class="bar-menu2 bar-active"></div>
+                    </div>
+                    <div class="line-menu2">
+                        <div class="bar-menu2"><p>Skills&nbsp</p></div>
+                    </div>
+                    <div class="line-menu2">
+                        <div class="bar-menu2"><p>Contact&nbsp</p></div>
                     </div>
                 </div>
-                <div class="image-project">
-                    <div class="image-nav-container">
-                    <img src="images/emojifier/samus1.jpg" alt="image of project">
-                        <div class="nav-project-images">
-                            <div class="image-arrow-container">
-                                <img class="chevron-icon-project" src="images/nav/chev-right.svg" alt="chevron right">
+                <div class="icons-contact">
+                    <div class="github-icon">
+                        <img class="github-icon" src="images/specs/github.svg" alt="github icon">
+                    </div>
+                    <div class="gitlab-icon">
+                        <img class="github-icon" src="images/specs/gitlab.svg" alt="gitlab icon">
+                    </div>
+                    <div class="linkedin-icon">
+                        <img class="linkedin-icon" src="images/specs/linkedin.svg" alt="linkedin icon">
+                    </div>
+                </div>
+            </div>
+            <div class="row-middle">
+                <div class="border-skew"></div>
+                <div class="project-lines">
+                    {% for project in projects %}
+                        <div class="line project-line">
+                            <div class="bar project-bar"><p>{{ project.title }}&nbsp</p></div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row-right">
+                <div class="right-stuff-project">
+                    <div class="github-button">
+                        <a href="#" class="github-button-link">
+                            <img class="github-project" src="images/specs/github-inverted.svg"
+                                 alt="github project icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-project-content">
+                    <div class="title-project">
+                        <div class="title-project-container">
+                            <p></p>
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="image-project">
+                        <div class="image-nav-container">
+                            <img src="images/emojifier/linku.png" alt="image of project">
+                            <div class="nav-project-images">
+                                <div class="image-arrow-container">
+                                    <img class="chevron-icon-project" src="images/nav/chev-right.svg"
+                                         alt="chevron right">
+                                </div>
+                                <div class="image-arrow-container">
+                                    <img class="chevron-icon-project" src="images/nav/chev-left.svg" alt="chevron left">
+                                </div>
                             </div>
-                            <div class="image-arrow-container">
-                                <img class="chevron-icon-project" src="images/nav/chev-left.svg" alt="chevron left">
+                        </div>
+                        <div class="project-skill-used">
+                            <div class="skill-used-container">
+                                <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg"
+                                                             alt="github project icon"></div>
+                                <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg"
+                                                             alt="github project icon"></div>
+                                <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg"
+                                                             alt="github project icon"></div>
+                                <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg"
+                                                             alt="github project icon"></div>
+                                <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg"
+                                                             alt="github project icon"></div>
+                                <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg"
+                                                             alt="github project icon"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="project-skill-used">
-                        <div class="skill-used-container">
-                            <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg" alt="github project icon"></div>
-                            <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg" alt="github project icon"></div>
-                            <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg" alt="github project icon"></div>
-                            <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg" alt="github project icon"></div>
-                            <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg" alt="github project icon"></div>
-                            <div class="skill-used"><img class="icon-skill" src="images/specs/github.svg" alt="github project icon"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="desc-project">
-                    <div class="desc-triangle"></div>
-                    <div class="desc-grid">
-                        <div class="project-description">
-                            <p>Emojifier is an app that let you transform images (jpg or png) in a mosaique of emojis. You can choose between 2 algos and have different options for sampling and emoji size.</p>
+                    <div class="desc-project">
+                        <div class="desc-triangle"></div>
+                        <div class="desc-grid">
+                            <div class="project-description">
+                                <p></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
+    <div class="hidden-project-container display-none">
+        {% for project in projects %}
+            <div class="full-project">
+                <div class="hid-p-title">
+                    {{ project.title }}
+                </div>
+                <div class="hid-p-desc">
+                    {{ project.description }}
+                </div>
+                <div class="hid-p-id">
+                    {{ project.id }}
+                </div>
+                {% for image in project.images %}
+                    <div class="hid-p-image">
+                        {{ image }}
+                    </div>
+                {% endfor %}
+                {% for spec in project.specs %}
+                    <div class="hid-p-spec">
+                        {{ spec }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
 {% block javascripts %}
-{{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('projectJs') }}
 {% endblock %}
