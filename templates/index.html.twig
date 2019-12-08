@@ -128,6 +128,7 @@
                     </div>
                 </div>
             </div>
+            <canvas id="myCanvas"></canvas>
             <div class="row-right row-blue">
                 <div class="welcome-msg">
                     <div class="welcome-text">
@@ -146,6 +147,7 @@
                         <p>(wip)</p>
                     </div>
                 </div>
+                <div class="bottom-cuts-bg"></div>
                 <div class="bottom-cuts-container">
                     <div class="cut-dot-container">
                         <div class="bottom-dot"></div>
@@ -399,4 +401,5 @@
 {% endblock %}
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('shootingStar') }}
 {% endblock %}

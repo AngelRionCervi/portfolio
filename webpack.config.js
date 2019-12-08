@@ -26,6 +26,7 @@ Encore
     .addEntry('app', './assets/js/app.js')
     .addEntry('projectJs', './assets/js/projects.js')
     .addEntry('contactjs', './assets/js/contact.js')
+    .addEntry('shootingStar', './assets/js/shootingStar.js')
     .addEntry('aboutMeCss', './assets/css/aboutMe.css')
     .addEntry('projectsCss', './assets/css/projects.css')
     .addEntry('skills', './assets/css/skills.css')

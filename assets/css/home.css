@@ -37,6 +37,17 @@
     box-shadow: inset 0px 0px 0px var(--main-border-height) var(--el-color);
 }
 
+#myCanvas {
+    position: absolute;
+    background-color: var(--el-color);
+    margin: 0 auto;
+    margin-right: 0;
+    width: 62vw;
+    z-index: 1;
+    right: 0;
+    height: 100vh;
+}
+
 .bar-active {
     background-position: 0% 100% !important;
     cursor: default !important;
@@ -46,7 +57,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 40vw;
     height: var(--main-border-height);
     z-index: 10;
     background-color: var(--el-color);
@@ -254,10 +265,7 @@
     right: var(--main-border-height);
     top: var(--main-border-height);
     margin: 0;
-}
-
-.welcome-text {
-    
+    z-index: 1;
 }
 
 .welcome-text > p {
@@ -286,6 +294,7 @@
     width: 58vw;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 1;
 }
 
 .cut-dot-container {
@@ -437,6 +446,15 @@
 
 .bar-menu2:hover > p {
     background-position: 0% -100%;
+}
+
+.bottom-cuts-bg {
+    position: absolute;
+    bottom: 0;
+    width: 62vw;
+    z-index: 1;
+    height: calc(1.8vw + 1.4vh + 4.6vw);
+    background-color: var(--el-color);
 }
 
 
