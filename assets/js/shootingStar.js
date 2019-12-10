@@ -98,7 +98,7 @@ function shootingStar() {
 
                     
                 ctx.beginPath();
-                ctx.arc(a[i] - cometSize[i]*(1.618*u)*cometExtend[i], yss[i] - cometSize[i]*(1.618*u)*cometExtend[i], cometSize[i]/(1.618*u), 0, Math.PI*2);
+                ctx.arc(a[i] - cometSize[i]*(1.618*u)*cometExtend[i], yss[i] - cometSize[i]*(1.618*u)*cometExtend[i], cometSize[i]/(1.618), 0, Math.PI*2);
                 ctx.fillStyle = "rgba(241, 240, 234, "+ 1/u +")";
                 ctx.strokeStyle = "rgba(241, 240, 234, "+ 1/u +")";
                 ctx.fill();
