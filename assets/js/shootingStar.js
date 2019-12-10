@@ -3,9 +3,7 @@ var canvas = document.getElementById("myCanvas");
 canvas.width = window.screen.width/100*62;
 canvas.height = window.screen.height;
 
-let cometColor = '#f1f0ea';
 var ctx = canvas.getContext("2d");
-
 
 function genRand(min, max, decimalPlaces) {  
     var rand = Math.random()*(max-min) + min;
@@ -32,7 +30,7 @@ function shootingStar() {
         clearInterval(exit);
         enter = setInterval(()=>{
             cometSizeInc.forEach((v, i, a)=>{
-                if(a[i] < 0.08){
+                if(a[i] < 0.05){
                     a[i] += 0.005;
                 }
             })
@@ -45,7 +43,7 @@ function shootingStar() {
 
     })
 
-    canvas.addEventListener('mouseout', ()=>{
+    canvas.addEventListener('mouseleave', ()=>{
         clearInterval(enter);
         exit = setInterval(()=>{
             cometSizeInc.forEach((v, i, a)=>{
@@ -54,7 +52,7 @@ function shootingStar() {
                 }
             })
             cometExtendMult.forEach((v, i, a)=>{
-                if(cometExtend[i] > 0){
+                if(cometExtend[i] > -0.005){
                     a[i] -= 0.001;
                 }
             })
@@ -74,7 +72,7 @@ function shootingStar() {
                 tailNumber.push(genRand(4, 8, 0))
             } 
         }
-    }, 500)
+    }, 100);
 
     function render() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -95,15 +93,12 @@ function shootingStar() {
         xss.forEach((v, i, a) => {
 
             for (let u = 1; u < tailNumber[i]+1; u++) {
-
-                    
                 ctx.beginPath();
-                ctx.arc(a[i] - cometSize[i]*(1.618*u)*cometExtend[i], yss[i] - cometSize[i]*(1.618*u)*cometExtend[i], cometSize[i]/(1.618), 0, Math.PI*2);
+                ctx.arc(a[i] - cometSize[i]*(1.618*u)*cometExtend[i], yss[i] - cometSize[i]*(1.618*u)*cometExtend[i], cometSize[i]/1.618, 0, Math.PI*2);
                 ctx.fillStyle = "rgba(241, 240, 234, "+ 1/u +")";
                 ctx.strokeStyle = "rgba(241, 240, 234, "+ 1/u +")";
                 ctx.fill();
                 ctx.closePath();
-
             }
             
             
@@ -124,8 +119,15 @@ function shootingStar() {
     render();
 }
 
-
 shootingStar();
+
+window.addEventListener('resize', () => {
+    canvas.width = window.screen.width/100*62;
+    canvas.height = window.screen.height;
+    shootingStar();
+});
+
+
 
 
 

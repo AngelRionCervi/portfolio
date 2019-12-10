@@ -453,8 +453,9 @@
     bottom: 0;
     width: 62vw;
     z-index: 1;
-    height: calc(1.8vw + 1.4vh + 4.6vw);
+    height: calc(1.8vw + 1.4vh + 4vw);
     background-color: var(--el-color);
+    box-shadow: 17px -20px 20px 2px rgba(28,54,72,1);
 }
 
 
