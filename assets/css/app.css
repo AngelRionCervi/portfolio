@@ -55,4 +55,9 @@
 
   --line-height: 1.6;
 
+
+    --mobile-h1-size: calc(2vw + 2vh);
+    --mobile-bigtext-size: calc(1.4vw + 1.4vh);
+    --mobile-text-size: calc(1vw + 1vh);
+
 }

@@ -1,0 +1,567 @@
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+.canvas-mobile {
+    background-color: var(--el-color);
+    margin: 0 auto;
+    margin-right: 0;
+    width: 100vw;
+    z-index: 1;
+    height: 100vh;
+}
+
+.h1-bar {
+    width: 10vw;
+    height: 0.5vh;
+    background-color: var(--el-color);
+    position: absolute;
+    left: 0;
+}
+
+.home-container {
+
+}
+
+.welcome-msg {
+    display: grid;
+    position: absolute;
+    top: 0;
+    right: var(--main-border-height);
+}
+
+.welcome-text {
+    text-align: end;
+    z-index: 1;
+    color: var(--bg-color);
+}
+
+.welcome-text > p {
+    font-size: 300%;
+    font-family: 'nimbusBold';
+}
+
+.home-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.icons-contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 6vw;
+    grid-row-gap: 0;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.icons-contact div {
+   z-index: 1;
+}
+
+.about-me-container {
+    width: 70%;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+}
+
+.h1-container > h1 {
+    width: 95%;
+    font-size: var(--mobile-h1-size);
+    text-align: end;
+    font-family: "nimbusReg";
+    color: var(--el-color);
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.weird-geom-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quote-container > p {
+    font-size: var(--mobile-bigtext-size);
+    font-style: italic;
+    font-family: "nimbusBold";
+    color: var(--el-color);
+    margin-left: var(--main-border-height);
+}
+
+.hexagon-part {
+    float: left;
+}
+
+.hexagon-shape {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    /* add slash at the end of line to see the rhombus *
+    outline: solid 1px red;/**/
+    width: 24vw;
+    height: 24vw;
+    transform: skewX(30deg) scaleY(.866);
+}
+.hexagon-shape:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-color: var(--shade-0);
+    content: '';
+}
+
+.lil-dot {
+    height: 4vw;
+    width: 4vw;
+    background-color: var(--el-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.big-dot {
+    height: 9vw;
+    width: 9vw;
+    background-color: var(--el-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 2vw;
+    position: relative;
+
+}
+
+.small-line {
+    width: 7vw;
+    height: var(--small-border-height);
+    position: absolute;
+    left: -2.5vw;
+    top: 4.5vw;
+    transform: rotate(90deg);
+    background-color: var(--bg-color);
+}
+
+.text-container {
+    width: 90%;
+    margin-top: 8%;
+    color: var(--el-color);
+}
+
+.text-container > p {
+    line-height: var(--line-height);
+    font-size: var(--mobile-text-size);
+}
+
+
+
+
+.skill-section {
+    width: 70%;
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7vh;
+}
+
+.skill-specs-container {
+    margin-top: 3vh;
+    margin-bottom: 3vh
+}
+
+.skill-specs-grid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2vh;
+    grid-row-gap: 4vh;
+}
+
+.spec-text > p {
+    font-size: var(--mobile-text-size);
+    color: var(--el-color);
+}
+
+.spec-underline {
+    height: 1vh;
+    width: 100%;
+    background-color: var(--el-color);
+}
+
+
+.h1-container-skills {
+    margin-top: calc(0.5vw + 0.2vh);
+}
+
+.h1-container-skills > h1{
+    text-align: center;
+    font-size: var(--mobile-h1-size);
+    font-family: "nimbusReg";
+    color: var(--el-color);
+    margin-top: var(--main-border-height);
+    margin-bottom: 8%;
+}
+
+.skills-grid-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0;
+}
+
+.h-skill {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.fast-skill {
+    margin-top: 2vh;
+}
+
+.h-skill-logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hexagon-skill-part {
+    float: left;
+    margin: 0 auto;
+}
+
+.hexagon-skill-shape {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    width: 18vw;
+    height: 18vw;
+    transform: skewX(30deg) scaleY(.866);
+}
+.hexagon-skill-shape:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-color: #dedfdb;
+    content: '';
+}
+
+.h-skill-text {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.h-skill-text > p {
+    font-family: "nimbusReg";
+    line-height: var(--line-height);
+    font-size: var(--mobile-text-size);
+    color: var(--el-color);
+}
+
+.skill-icon {
+    position: absolute;
+    width: 7vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.skill-rounds {
+    position: relative;
+    height: 8vh;
+}
+
+.top-circle-1 {
+    height: 0.7vw;
+    width: 0.7vw;
+    background-color: var(--shade-3);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 3vw;
+    left: 8vw;
+}
+
+.top-circle-2 {
+    height: 3vw;
+    width: 3vw;
+    background-color: var(--shade-4);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 3vw;
+    right: 26vw;
+    margin-top: -1.5vw;
+}
+
+.bottom-circle-1 {
+    height: 2.6vw;
+    width: 2.6vw;
+    background-color: var(--el-color);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 3vw;
+    left: 7vw;
+}
+
+.bottom-circle-2 {
+    height: 1vw;
+    width: 1vw;
+    background-color: var(--shade-2);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 3vw;
+    right: 22vw;
+    margin-bottom: -1vw;
+}
+
+
+
+.contact-section {
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7vh;
+}
+
+.contact-right-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 3vh;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-title > h1 {
+    align-items: end;
+    font-size: var(--mobile-bigtext-size);
+    color: var(--el-color);
+    font-family: "nimbusReg";
+    margin-top: calc(2vw + 1vh);
+    text-align: end;
+}
+
+.msg-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 2VW;
+    margin: 0 auto;
+    height: 20vh;
+}
+
+.email-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-left: var(--medium-border-height) solid var(--el-color);
+    border-right: var(--medium-border-height) solid var(--el-color);
+    padding: 1vw;
+    color: var(--el-color);
+    font-size: 1vw;
+}
+
+.text-area-container {
+    position: relative;
+}
+
+.msg-textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-left: var(--medium-border-height) solid transparent;
+    padding: 1vw;
+    color: var(--el-color);
+    font-size: 1vw;
+    resize: none;
+    width: calc(100% - 3vw);
+    height: calc(100% - 3vw);
+    overflow: hidden;
+}
+
+.textarea-border-left {
+    width: var(--medium-border-height);
+    height: 100%;
+    background-color: var(--el-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.textarea-border-bottom {
+    width: 16vw;
+    height: var(--medium-border-height);
+    background-color: var(--el-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.textarea-border-right {
+    width: var(--medium-border-height);
+    height: 10vw;
+    background-color: var(--el-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.buttom-send {
+    position: absolute;
+    right: 0;
+    bottom: calc(-1.2vw + -0.6vh);
+    height: calc(1.2vw + 0.6vh);
+    width: 5vw;
+    background-color: var(--el-color);
+    border: 0;
+    color: var(--bg-color);
+    outline: none;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.contact-bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.contact-bottom-dots-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.contact-dot-1 {
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: var(--shade-1);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.contact-dot-2 {
+    height: 2.250vw;
+    width: 2.250vw;
+    background-color: var(--shade-2);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.contact-dot-3 {
+    height: 2.4vw;
+    width: 2.4vw;
+    background-color: var(--shade-2);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.contact-dot-4 {
+    height: 2vw;
+    width: 2vw;
+    background-color: var(--shade-2);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.contact-dot-5 {
+    height: 12vw;
+    width: 12vw;
+    background-color: var(--el-color);
+    border-radius: 50%;
+    display: flex;
+}
+
+.contact-dot-5 > .send-button {
+    color: var(--bg-color);
+    font-size: 2vw;
+    font-family: "nimbusBold";
+    margin: 0 auto;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.contact-dot-6 {
+    height: 5.4vw;
+    width: 5.4vw;
+    background-color: var(--shade-4);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact-dot-6 > .small-line {
+    transform: rotate(40deg);
+    height: var(--small-border-height);
+    width: 8vw;
+    position: absolute;
+    left: -28%;
+    top: 40%;
+    background-color: var(--bg-color);
+}
+
+.contact-dot-7 {
+    height: 3.2vw;
+    width: 3.2vw;
+    background-color: var(--shade-2);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact-dot-8 {
+    height: 2.6vw;
+    width: 2.6vw;
+    background-color: var(--shade-1);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}

@@ -37,7 +37,7 @@
     box-shadow: inset 0px 0px 0px var(--main-border-height) var(--el-color);
 }
 
-#myCanvas {
+.canvas-desktop {
     position: absolute;
     background-color: var(--el-color);
     margin: 0 auto;

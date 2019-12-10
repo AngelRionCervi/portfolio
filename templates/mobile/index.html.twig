@@ -1,0 +1,233 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    {{ encore_entry_link_tags('mobileStyle') }}
+{% endblock %}
+{% block content %}
+    <div class="supercontainer">
+        <div class="home-section">
+            <canvas class="canvas canvas-mobile"></canvas>
+            <div class="home-container">
+                <div class="welcome-msg">
+                    <div class="welcome-text">
+                        <p>Welcome</p>
+                    </div>
+                    <div class="welcome-text">
+                        <p>to</p>
+                    </div>
+                    <div class="welcome-text">
+                        <p>my</p>
+                    </div>
+                    <div class="welcome-text">
+                        <p>portfolio</p>
+                    </div>
+                </div>
+                <div class="icons-contact">
+                    <div class="github-icon">
+                        <img class="github-icon" src="images/specs/github-inverted.svg" alt="github icon">
+                    </div>
+                    <div class="gitlab-icon">
+                        <img class="github-icon" src="images/specs/gitlab-inverted.svg" alt="gitlab icon">
+                    </div>
+                    <div class="linkedin-icon">
+                        <img class="linkedin-icon" src="images/specs/linkedin-inverted.svg" alt="linkedin icon">
+                    </div>
+                </div>
+            </div>
+            <div class="about-me-container">
+                <div class="h1-container">
+                    <h1>About Me</h1>
+                </div>
+                <div class="quote-container">
+                    <p class="quote">"Who is this guy?"</p>
+                </div>
+                <div class="weird-geom-container">
+                    <div class="double-circle-container">
+                        <div class="lil-dot"></div>
+                        <div class="big-dot"> <div class="small-line"></div></div>
+
+                    </div>
+                    <div class="photo-container">
+                        <div class="hexagon-part">
+                            <div class="hexagon-shape"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hi, My name is Angel Rion-Cervi, I'm a web-developper currently based in Orléans, France. I work mainly with JavaScript and PHP and a few frameworks.<br>I like video-games, music and css grid. <br> Feel free to contact me !</p>
+                </div>
+            </div>
+            <div class="skill-section">
+                <div class="h1-container">
+                    <div class="h1-bar"></div>
+                    <h1>Skills</h1>
+                </div>
+                <div class="skill-specs-container">
+                    <div class="skill-specs-grid">
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>HTML</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>CSS</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>Sass</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p></p></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>JavaScript</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>jQuery</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>VueJS</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>ReactJS</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>PHP</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>Symfony</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p></p></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p></p></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>SQL</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p>MySQL</p></div>
+                            <div class="spec-underline"></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p></p></div>
+                        </div>
+                        <div class="skill-spec">
+                            <div class="spec-text"><p></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-grid-container">
+                    <div class="fast-skill h-skill">
+                        <div class="h-skill-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="h-skill-logo">
+                            <div class="hexagon-skill-part">
+                                <div class="hexagon-skill-shape"></div>
+                            </div>
+                            <img class="skill-icon" src="images/specs/racing.svg" alt="github icon">
+                        </div>
+                    </div>
+                    <div class="skill-rounds">
+                        <div class="top-circle-1"></div>
+                        <div class="top-circle-2"></div>
+                    </div>
+                    <div class="multi-skill h-skill">
+                        <div class="h-skill-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                        </div>
+                        <div class="h-skill-logo">
+                            <div class="hexagon-skill-part">
+                                <div class="hexagon-skill-shape">
+                                </div>
+                            </div>
+                            <img class="skill-icon" src="images/specs/links.svg" alt="github icon">
+                        </div>
+                    </div>
+                    <div class="skill-rounds">
+                        <div class="bottom-circle-1"></div>
+                        <div class="bottom-circle-2"></div>
+                    </div>
+                    <div class="team-skill h-skill">
+                        <div class="h-skill-text">
+                            <p>
+                                Ut enim ad minim t aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                        <div class="h-skill-logo">
+                            <div class="hexagon-skill-part">
+                                <div class="hexagon-skill-shape">
+                                </div>
+                            </div>
+                            <img class="skill-icon" src="images/specs/teamwork.svg" alt="github icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="h1-container">
+                    <div class="h1-bar"></div>
+                    <h1>Contact</h1>
+                </div>
+                <div class="contact-right-content">
+                    <div class="contact-title">
+                        {% if messaged %}
+                            <h1>I've received your message ! Replying soon !</h1>
+                        {% else %}
+                            <h1>Feel free to contact me for work<br>or just to chat!</h1>
+                        {% endif %}
+                    </div>
+                    {{ form_start(form) }}
+                    <div class="msg-container">
+                        {{ form_widget(form.email, {'attr': {'class': 'email-input'}}) }}
+                        <div class="text-area-container">
+                            {{ form_widget(form.message, {'attr': {'class': 'msg-textarea'}}) }}
+                            <div class="textarea-border-left"></div>
+                            <div class="textarea-border-bottom"></div>
+                            <div class="textarea-border-right"></div>
+                        </div>
+
+                    </div>
+                    <div class="contact-bottom">
+                        <div class="contact-bottom-dots-container">
+                            <div class="contact-dot-1"></div>
+                            <div class="contact-dot-2"></div>
+                            <div class="contact-dot-3"></div>
+                            <div class="contact-dot-4"></div>
+                            <div class="contact-dot-5">
+                                <button type="submit" class="send-button">Send</button>
+                            </div>
+                            <div class="contact-dot-6">
+                                <div class="small-line"></div>
+                            </div>
+                            <div class="contact-dot-7"></div>
+                            <div class="contact-dot-8"></div>
+                        </div>
+                        <div class="small-line"></div>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('shootingStar') }}
+{% endblock %}

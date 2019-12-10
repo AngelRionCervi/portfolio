@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 
+use Mobile_Detect;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,15 +16,56 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="index")
      */
-    public function indexAction()
+    public function indexAction(Request $request, \Swift_Mailer $mailer)
     {
+        $detect = new Mobile_Detect;
 
-        $projectsJson = file_get_contents("../assets/json/projects.json");
-        $projects = json_decode($projectsJson, true);
+        if($detect->isMobile() || $detect->isTablet()) {
 
-        return $this->render('index.html.twig', [
-            "projects" => $projects
-        ]);
+            $defaultData = [];
+            $formContact = $this->createFormBuilder($defaultData)
+                ->add('email', EmailType::class, [
+                    'attr' => [
+                        'placeholder' => 'Email',
+                    ]
+                ])
+                ->add('message', TextareaType::class, [
+                    'attr' => [
+                        'placeholder' => 'Message',
+                    ]
+                ])
+                ->getForm();
+
+            $formContact->handleRequest($request);
+
+            if ($formContact->isSubmitted() && $formContact->isValid()) {
+                $data = $formContact->getData();
+                $message = (new \Swift_Message())
+                    ->setFrom('a.rioncervi@gmail.com')
+                    ->setTo('a.rioncervi@gmail.com')
+                    ->setSubject('someone wrote something from you portfolio you should open this now')
+                    ->setBody(
+                        "from: " . $data['email'] . "\n\n" . $data['message']
+                    );
+
+                $mailer->send($message);
+
+                return $this->render('contact.html.twig', [
+                    'form' => $formContact->createView(),
+                    'messaged' => true
+                ]);
+            }
+
+            return $this->render('mobile/index.html.twig', [
+                'form' => $formContact->createView(),
+                'messaged' => false
+            ]);
+
+
+        } else {
+
+            return $this->render('index.html.twig');
+        }
     }
 
     /**

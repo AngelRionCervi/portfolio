@@ -27,10 +27,12 @@ Encore
     .addEntry('projectJs', './assets/js/projects.js')
     .addEntry('contactjs', './assets/js/contact.js')
     .addEntry('shootingStar', './assets/js/shootingStar.js')
+    .addEntry('home', './assets/css/home.css')
     .addEntry('aboutMeCss', './assets/css/aboutMe.css')
     .addEntry('projectsCss', './assets/css/projects.css')
     .addEntry('skills', './assets/css/skills.css')
     .addEntry('contact', './assets/css/contact.css')
+    .addEntry('mobileStyle', './assets/css/mobile/style.css')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

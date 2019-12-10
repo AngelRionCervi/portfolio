@@ -1,9 +1,12 @@
-var canvas = document.getElementById("myCanvas");
+var canvas = document.getElementsByClassName("canvas")[0];
 
-canvas.width = window.screen.width/100*62;
-canvas.height = window.screen.height;
-
-var ctx = canvas.getContext("2d");
+if (canvas.classList.contains('canvas-desktop')) {
+    canvas.width = window.screen.width/100*62; // cause its 62vw
+    canvas.height = window.screen.height;
+} else {
+    canvas.width = window.screen.width;
+    canvas.height = window.screen.height;
+}
 
 function genRand(min, max, decimalPlaces) {  
     var rand = Math.random()*(max-min) + min;
@@ -11,6 +14,7 @@ function genRand(min, max, decimalPlaces) {
     return Math.floor(rand*power) / power;
 }
 
+let ctx = canvas.getContext("2d");
 let xss = [];
 let yss = [];
 let cometSize = [];
@@ -19,7 +23,6 @@ let cometSpeed = [];
 let cometExtend = [];
 let cometExtendMult = [];
 let tailNumber = [];
-
 
 function shootingStar() {
 
@@ -120,12 +123,6 @@ function shootingStar() {
 }
 
 shootingStar();
-
-window.addEventListener('resize', () => {
-    canvas.width = window.screen.width/100*62;
-    canvas.height = window.screen.height;
-    shootingStar();
-});
 
 
 
