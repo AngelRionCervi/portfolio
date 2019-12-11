@@ -180,6 +180,20 @@
                     </div>
                 </div>
             </div>
+            <div class="project-section">
+                <div class="h1-container">
+                    <div class="h1-bar"></div>
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-grid">
+                    {% for project in projects %}
+                        <div class="project-item">
+                            <img class="project-image project_{{ loop.index }}" src="images/{{ project.images[0] }}" alt="project thumbnail">
+                            <div class="project-title"><p>{{ project.title }}</p></div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
             <div class="contact-section">
                 <div class="h1-container">
                     <div class="h1-bar"></div>

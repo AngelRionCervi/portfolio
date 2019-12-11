@@ -22,6 +22,9 @@ class HomeController extends AbstractController
 
         if($detect->isMobile() || $detect->isTablet()) {
 
+            $projectsJson = file_get_contents("../assets/json/projects.json");
+            $projects = json_decode($projectsJson, true);
+
             $defaultData = [];
             $formContact = $this->createFormBuilder($defaultData)
                 ->add('email', EmailType::class, [
@@ -52,13 +55,15 @@ class HomeController extends AbstractController
 
                 return $this->render('contact.html.twig', [
                     'form' => $formContact->createView(),
-                    'messaged' => true
+                    'messaged' => true,
+                    'projects' => $projects
                 ]);
             }
 
             return $this->render('mobile/index.html.twig', [
                 'form' => $formContact->createView(),
-                'messaged' => false
+                'messaged' => false,
+                'projects' => $projects
             ]);
 
 
