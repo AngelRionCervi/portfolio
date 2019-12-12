@@ -188,6 +188,7 @@
                 <div class="project-grid">
                     {% for project in projects %}
                         <div class="project-item">
+                            <div class="background-dot"></div>
                             <img class="project-image project_{{ loop.index }}" src="images/{{ project.images[0] }}" alt="project thumbnail">
                             <div class="project-title"><p>{{ project.title }}</p></div>
                         </div>
