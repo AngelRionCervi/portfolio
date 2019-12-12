@@ -2,6 +2,7 @@
 
 {% block stylesheets %}
     {{ encore_entry_link_tags('app') }}
+    {{ encore_entry_link_tags('animate') }}
     {{ encore_entry_link_tags('mobileStyle') }}
 {% endblock %}
 {% block content %}
@@ -45,7 +46,9 @@
                 <div class="weird-geom-container">
                     <div class="double-circle-container">
                         <div class="lil-dot"></div>
-                        <div class="big-dot"> <div class="small-line"></div></div>
+                        <div class="big-dot">
+                            <div class="small-line"></div>
+                        </div>
 
                     </div>
                     <div class="photo-container">
@@ -55,7 +58,9 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Hi, My name is Angel Rion-Cervi, I'm a web-developper currently based in Orléans, France. I work mainly with JavaScript and PHP and a few frameworks.<br>I like video-games, music and css grid. <br> Feel free to contact me !</p>
+                    <p>Hi, My name is Angel Rion-Cervi, I'm a web-developper currently based in Orléans, France. I work
+                        mainly with JavaScript and PHP and a few frameworks.<br>I like video-games, music and css grid.
+                        <br> Feel free to contact me !</p>
                 </div>
             </div>
             <div class="skill-section">
@@ -130,7 +135,8 @@
                     <div class="fast-skill h-skill">
                         <div class="h-skill-text">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
                         <div class="h-skill-logo">
@@ -167,7 +173,8 @@
                         <div class="h-skill-text">
                             <p>
                                 Ut enim ad minim t aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur.
                             </p>
                         </div>
                         <div class="h-skill-logo">
@@ -183,14 +190,63 @@
             <div class="project-section">
                 <div class="h1-container">
                     <div class="h1-bar"></div>
-                    <h1>Projects</h1>
+                    <h1 class="more-h1-margin">Projects</h1>
                 </div>
                 <div class="project-grid">
                     {% for project in projects %}
                         <div class="project-item">
-                            <div class="background-dot"></div>
-                            <img class="project-image project_{{ loop.index }}" src="images/{{ project.images[0] }}" alt="project thumbnail">
-                            <div class="project-title"><p>{{ project.title }}</p></div>
+                            <a id="demo_{{ loop.index }}" class="project-item-link" href="#projmod_{{ loop.index }}">
+                                <div class="background-dot"></div>
+                                <img class="project-image project_{{ loop.index }}" src="images/{{ project.images[0] }}"
+                                     alt="project thumbnail">
+                                <div class="project-title"><p>{{ project.title }}</p></div>
+                            </a>
+                        </div>
+
+                        <div id="projmod_{{ loop.index }}">
+                            <div class="modal-content">
+                                <div class="images-container">
+                                    <div class="github-banner">
+                                       <a href="#" class="github-project-link">
+                                           <img class="github-project-logo" src="/images/specs/github-inverted.svg" alt="github logo">
+                                       </a>
+                                    </div>
+                                    <img class="project-content-image" src="images/{{ project.images[0] }}"
+                                         alt="project images">
+                                </div>
+                                <div class="title-nav">
+                                    <div class="project-title-container">
+                                        <p>{{ project.title }}</p>
+                                    </div>
+                                    <div class="navigation-container">
+                                        <div class="top-corner-triangle"></div>
+                                        <div class="left-right">
+                                            <div class="left-arrow arrow-project">
+                                                <img class="chevron-mobile" src="images/nav/chev-left.svg"
+                                                     alt="chevron left">
+                                            </div>
+                                            <div class="right-arrow arrow-project">
+                                                <img class="chevron-mobile" src="images/nav/chev-right.svg"
+                                                     alt="chevron right">
+                                            </div>
+                                        </div>
+                                        <div class="corner-triangle"></div>
+                                    </div>
+                                </div>
+                                <div class="description-specs-container">
+                                    <div class="project-description">
+                                        <p>{{ project.description }}</p>
+                                    </div>
+                                    <div class="project-specs">
+                                        {% for spec in project.specs %}
+                                            <img class="project-spec" src="images/specs/{{ spec }}" alt="project specifications">
+                                        {% endfor %}
+                                    </div>
+                                    <div class="close-modal close-projmod_{{ loop.index }}">
+                                        <img class="cross-remove-modal" src="images/nav/cross.svg" alt="cross remove modal">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>
@@ -198,7 +254,7 @@
             <div class="contact-section">
                 <div class="h1-container">
                     <div class="h1-bar"></div>
-                    <h1>Contact</h1>
+                    <h1 class="more-h1-margin">Contact</h1>
                 </div>
                 <div class="contact-right-content">
                     <div class="contact-title">
@@ -245,4 +301,6 @@
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
     {{ encore_entry_script_tags('shootingStar') }}
+    {{ encore_entry_script_tags('animatedModal') }}
+    {{ encore_entry_script_tags('mobileProjects') }}
 {% endblock %}
