@@ -11,10 +11,6 @@
    font-style: italic; 
 }
 
-.display-none {
-    display: none !important;
-}
-
 .preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;

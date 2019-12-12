@@ -17,6 +17,10 @@
     font-style: normal;
 }
 
+.display-none {
+    display: none !important;
+}
+
 /* ERRORS */
 
 .error_title-container > h1 {

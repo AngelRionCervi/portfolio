@@ -197,13 +197,17 @@
                         <div class="project-item">
                             <a id="demo_{{ loop.index }}" class="project-item-link" href="#projmod_{{ loop.index }}">
                                 <div class="background-dot"></div>
-                                <img class="project-image project_{{ loop.index }}" src="images/{{ project.images[0] }}"
+                                <img class="project-image" src="images/{{ project.images[0] }}"
                                      alt="project thumbnail">
                                 <div class="project-title"><p>{{ project.title }}</p></div>
                             </a>
                         </div>
-
-                        <div id="projmod_{{ loop.index }}">
+                        <div class="rest-images display-none">
+                            {% for image in project.images %}
+                                {{ image }}
+                            {% endfor %}
+                        </div>
+                        <div id="projmod_{{ loop.index }}" class="project-modal">
                             <div class="modal-content">
                                 <div class="images-container">
                                     <div class="github-banner">
@@ -211,7 +215,8 @@
                                            <img class="github-project-logo" src="/images/specs/github-inverted.svg" alt="github logo">
                                        </a>
                                     </div>
-                                    <img class="project-content-image" src="images/{{ project.images[0] }}"
+                                    <div class="image-transition-cover image-transition-cover_{{ loop.index }}"></div>
+                                    <img class="project-content-image project-content-image_{{ loop.index }}" src="images/{{ project.images[0] }}"
                                          alt="project images">
                                 </div>
                                 <div class="title-nav">
@@ -221,11 +226,11 @@
                                     <div class="navigation-container">
                                         <div class="top-corner-triangle"></div>
                                         <div class="left-right">
-                                            <div class="left-arrow arrow-project">
+                                            <div class="chevron-left_{{ loop.index }} arrow-project">
                                                 <img class="chevron-mobile" src="images/nav/chev-left.svg"
                                                      alt="chevron left">
                                             </div>
-                                            <div class="right-arrow arrow-project">
+                                            <div class="chevron-right_{{ loop.index }} arrow-project">
                                                 <img class="chevron-mobile" src="images/nav/chev-right.svg"
                                                      alt="chevron right">
                                             </div>

@@ -776,3 +776,51 @@ body {
     margin-left: -10%;
 }
 
+.image-transition-cover {
+    width: 0;
+    object-fit: cover;
+    height: 45vh;
+    background-color: var(--el-color);
+    position: absolute;
+    top: 0;
+}
+
+.animate-cover-right {
+    animation: slide-image-cover-right 0.6s var(--main-cubic-bezier) forwards;
+}
+
+.animate-cover-left {
+    animation: slide-image-cover-left 0.6s var(--main-cubic-bezier) forwards;
+}
+
+@keyframes slide-image-cover-right {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        left: 0;
+        width: 100vw;
+    }
+    100% {
+        left: 100vw;
+        width: 0;
+    }
+}
+
+@keyframes slide-image-cover-left {
+    0% {
+        left: 100vw;
+        width: 0;
+    }
+    50% {
+        left: 0;
+        width: 100vw;
+    }
+    100% {
+        left: 0;
+        width: 0;
+    }
+}
+
+
