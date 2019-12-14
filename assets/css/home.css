@@ -102,6 +102,7 @@
     grid-column-gap: 0;
     grid-row-gap: 0;
     margin-top: var(--main-border-height);
+    cursor: pointer;
 }
 
 .name p {
@@ -142,8 +143,8 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    margin-bottom: var(--main-border-height);
-    margin-left: 2vw;
+    margin-bottom: var(--medium-border-height);
+    margin-left: 1vw;
     width: 70%;
 }
 
@@ -192,6 +193,28 @@
     cursor: pointer;
 }
 
+.bar a {
+     -webkit-background-clip: text;
+     background-clip: text;
+     font-family: "nimbusReg";
+     background-image: linear-gradient(90deg, rgba(28,54,72,1) 50%, rgba(241,240,234,1) 50%);
+     position: absolute;
+     margin: 0;
+     font-size: calc(1.2vw + 0.8vh);
+     margin-top: -0.2%;
+     color: transparent;
+     background-position: -10vw -100%;
+     background-size: 50vw 100%;
+     transition: background-position 0.6s var(--main-cubic-bezier);
+     width: 100%;
+     text-align: end;
+     text-decoration: none;
+ }
+
+.bar:hover > a {
+    background-position: 0% -100%;
+}
+
 .bar p {
     -webkit-background-clip: text;
     background-clip: text;
@@ -207,6 +230,7 @@
     transition: background-position 0.6s var(--main-cubic-bezier);
     width: 100%;
     text-align: end;
+    text-decoration: none;
 }
 
 .bar:hover > p {
@@ -393,7 +417,7 @@
     margin-top: var(--main-border-height);
 }
 
-.menu2 p {
+.menu2 a {
     font-size: calc(1.2vw + 0.8vh);
     color: var(--el-color);
     font-family: "nimbusReg";
@@ -424,7 +448,7 @@
     cursor: pointer;
 }
 
-.bar-menu2 p {
+.bar-menu2 a {
     text-align: end;
     -webkit-background-clip: text;
     background-clip: text;
@@ -440,7 +464,7 @@
     width: 100%;
 }
 
-.bar-menu2:hover > p {
+.bar-menu2:hover > a {
     background-position: 0% -100%;
 }
 

@@ -5,7 +5,7 @@
     "images": [
       "emojifier/samus1.jpg",
       "emojifier/linku.png",
-      "emojifier/samus1.jpg"
+      "emojifier/ui.png"
     ],
     "description": "Transforme une image en mosaique d'émojis de taille choisie en fonction des couleurs moyennes aux coordonnées correspondantes",
     "specs": [
@@ -20,11 +20,11 @@
     "id": "2",
     "title": "Renoving Habitat",
     "images": [
-      "emojifier/linku.png",
-      "emojifier/linku.png",
-      "emojifier/samus1.jpg"
+      "renoving/global.png",
+      "renoving/coltype.jpg",
+      "renoving/whatwedo.jpg"
     ],
-    "description": "Transforme une image en mosaique d'émojis de taille choisie en fonction des couleurs moyennes aux coordonnées correspondantes",
+    "description": "Renoving Habitat is a website made for a young company specializing in house construction and renovation, the main feature is a fully customizable and component based form for online cost estimate",
     "specs": [
       "symfony.svg",
       "sass.svg",
@@ -35,13 +35,13 @@
   },
   "cryptoCharts": {
     "id": "3",
-    "title": "Crypto Board",
+    "title": "Crypto Charts",
     "images": [
-      "emojifier/samus1.jpg",
-      "emojifier/samus1.jpg",
-      "emojifier/linku.png"
+      "crypto-board/global.jpg",
+      "crypto-board/updown.jpg",
+      "crypto-board/gainloose.jpg"
     ],
-    "description": "Transforme une image en mosaique d'émojis de taille choisie en fonction des couleurs moyennes aux coordonnées correspondantes",
+    "description": "Crypto charts allows you to have a quick overview of the current state of the cryptocurrency market. You can compare the biggest winners and loosers at different timeframes and create custom sets of cryptos you want to keep and eye on.",
     "specs": [
       "node-dot-js.svg",
       "vue-dot-js.svg",
@@ -53,11 +53,11 @@
     "id": "4",
     "title": "Perlin noise map",
     "images": [
-      "emojifier/samus1.jpg",
-      "emojifier/samus1.jpg",
-      "emojifier/samus1.jpg"
+      "perlinMap/gloabl.jpg",
+      "perlinMap/create.jpg",
+      "perlinMap/full.jpg"
     ],
-    "description": "Créer une carte 2D aléatoire en fonction de paramètres d'élévation et de climat",
+    "description": "Create a random islands on a 2d based on multiple sets of perlin noises, you can even draw islands yourself ! (very wip)",
     "specs": [
       "javascript.svg",
       "html5.svg"
@@ -67,11 +67,11 @@
     "id": "5",
     "title": "Draw Me A Garden",
     "images": [
-      "emojifier/samus1.jpg",
-      "emojifier/samus1.jpg",
-      "emojifier/samus1.jpg"
+      "dmag/adviceEdit.png",
+      "dmag/searchProjects.jpg",
+      "dmag/customerAdvice.png"
     ],
-    "description": "li jardin c bi1",
+    "description": "Draw Me A Garden is a startup that specializes in building tailored gardens for its customers. I was able to work with the team during an internship on several website features such as customer advices, administration systems, project research, ui.",
     "specs": [
       "javascript.svg",
       "html5.svg"

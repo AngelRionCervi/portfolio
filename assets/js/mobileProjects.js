@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 function handleCarousel(index) {
 
-    let projectImages = Array.from(document.querySelectorAll('.rest-images')).map(el => el.textContent.split('\n').splice(1, 3))[index-1];
+    let projectImages = Array.from(document.querySelectorAll('.rest-images')).map(el => el.textContent.split('\n').splice(1, 3))[index - 1];
     let imageShow = document.querySelector('.project-content-image_' + index);
     let imageIndex = 0;
     let buttonFwd = document.querySelector('.chevron-right_' + index);

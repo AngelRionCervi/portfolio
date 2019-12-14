@@ -12,8 +12,13 @@ require('../css/app.css');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 const $ = require('jquery');
 
- $(window).on('load', function() {
+$(window).on('load', function() {
     $("body").removeClass("preload");
+});
+
+
+$('.name').click(()=>{
+    window.location.href = '/'
 });
 
 
