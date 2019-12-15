@@ -2,12 +2,13 @@
   "emojifier": {
     "id": "1",
     "title": "Image emojifier",
+    "github": "https://github.com/AngelRionCervi/emojifier",
     "images": [
       "emojifier/samus1.jpg",
       "emojifier/linku.png",
       "emojifier/ui.png"
     ],
-    "description": "Transforme une image en mosaique d'émojis de taille choisie en fonction des couleurs moyennes aux coordonnées correspondantes",
+    "description": "Convert a normal image in a mosaic of emojis based on the average color of a set square of pixel, then matches this color with the calculated average color of an emoji.",
     "specs": [
       "symfony.svg",
       "sass.svg",
@@ -19,12 +20,13 @@
   "renoving": {
     "id": "2",
     "title": "Renoving Habitat",
+    "github": "https://github.com/WildCodeSchool/orleans-0219-php-renoving-habitat.",
     "images": [
       "renoving/global.png",
       "renoving/coltype.jpg",
       "renoving/whatwedo.jpg"
     ],
-    "description": "Renoving Habitat is a website made for a young company specializing in house construction and renovation, the main feature is a fully customizable and component based form for online cost estimate",
+    "description": "Renoving Habitat is a website made for a young company specializing in house construction and renovation, the main feature is a fully customizable and component based form for online cost estimate.",
     "specs": [
       "symfony.svg",
       "sass.svg",
@@ -36,6 +38,7 @@
   "cryptoCharts": {
     "id": "3",
     "title": "Crypto Charts",
+    "github": "#unavailable_for_the_moment_¯\\_(ツ)_/¯",
     "images": [
       "crypto-board/global.jpg",
       "crypto-board/updown.jpg",
@@ -52,6 +55,7 @@
   "perlinNoise": {
     "id": "4",
     "title": "Perlin noise map",
+    "github": "https://github.com/AngelRionCervi/2dPerlinTerrainGen",
     "images": [
       "perlinMap/gloabl.jpg",
       "perlinMap/create.jpg",
@@ -66,6 +70,7 @@
   "DMAG": {
     "id": "5",
     "title": "Draw Me A Garden",
+    "github": "https://www.dmag.fr/fr/",
     "images": [
       "dmag/adviceEdit.png",
       "dmag/searchProjects.jpg",

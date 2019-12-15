@@ -11,6 +11,7 @@ function initProject(index) {
     let idShow = document.querySelector('.title-project-container > p');
     let descriptionShow = document.querySelector('.project-description > p');
     let imageShow = document.querySelector('.image-nav-container > img');
+    let githubShow = document.querySelector('.github-button-link');
     let specShow = Array.from(document.querySelectorAll('.skill-used > .icon-skill'));
 
     let project = projects[index];
@@ -23,6 +24,7 @@ function initProject(index) {
         titleShow.textContent = project.querySelector('.hid-p-title').textContent.trim();
         idShow.textContent = project.querySelector('.hid-p-id').textContent.trim() + '.';
         descriptionShow.textContent = project.querySelector('.hid-p-desc').textContent.trim();
+        githubShow.href = project.querySelector('.hid-p-github').textContent.trim();
 
     }, 300);
 

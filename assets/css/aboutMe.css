@@ -62,6 +62,9 @@
     transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
     background-color: var(--shade-0);
     content: '';
+	background-image: url(/images/angel.jpg);
+	background-size: 160%;
+	background-position: center;
 }    
 
 .lil-dot {

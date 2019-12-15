@@ -216,7 +216,7 @@ body {
 
 
 .skill-section {
-    width: 70%;
+    width: 80%;
     margin-top: 8vh;
     margin-left: auto;
     margin-right: auto;
@@ -225,7 +225,11 @@ body {
 
 .skill-specs-container {
     margin-top: 3vh;
-    margin-bottom: 4vh
+    margin-bottom: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
 }
 
 .skill-specs-grid {
@@ -703,7 +707,7 @@ body {
 .navigation-container {
     height: 8vh;
     background-color: var(--el-color);
-    margin-top: -0.3vh;
+    margin-top: -4%;
     position: relative;
 }
 

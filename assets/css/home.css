@@ -143,18 +143,21 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    margin-bottom: var(--medium-border-height);
-    margin-left: 1vw;
+    margin-bottom: 1.7vh;
+    margin-left: 1.1vw;
     width: 70%;
+    height: auto;
+    align-items: flex-end;
 }
 
 .icons-contact img {
-    width: 40%;
+    width: 100%;;
 }
 
-.icons-contact div {
+.icons-contact a {
     display: flex;
     align-items: flex-end;
+    width: 50%
 }
 
 .career-lines {
